@@ -51,4 +51,4 @@
     <a style="color:{green};" href={webringAll}>Zoomer Hacking</a>
     <a style="color:{white};" href={webringNext}>--&gt;</a>
 </div>
-</main> 
+</main>
