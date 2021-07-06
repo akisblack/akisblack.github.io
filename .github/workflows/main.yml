@@ -17,4 +17,4 @@ jobs:
           deploy-branch: gh-pages
           source-directory: public
           build-command: npm run build
-          custom-domain: akisblack.tech, www.akisblack.tech
+          custom-domain: akisblack.tech
