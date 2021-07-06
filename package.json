@@ -1,6 +1,7 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
+  "homepage": "/akisblack.github.io/",
   "scripts": {
     "build": "rollup -c rollup-pages.config.js",
     "dev": "rollup -c -w rollup-pages.config.js",
