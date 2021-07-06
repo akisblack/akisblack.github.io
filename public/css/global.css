@@ -1,6 +1,7 @@
 @font-face {
     font-family: Nunito;
     src: url(../fonts/Nunito-SemiBold.ttf);
+    font-display: swap;
 }
 
 :root {
