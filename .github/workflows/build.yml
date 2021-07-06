@@ -1,45 +1,36 @@
-name: Build and push to gh-pages
-# This workflow was made by my good friend Devnol.
+name: github pages
+
 on:
   push:
     branches:
       - master
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - '.github/**'
-      - 'README.md'
+  pull_request:
+
 jobs:
-  Build: 
-    name: 'Build'
-    runs-on: ubuntu-latest
-    if: "!(contains(github.event.head_commit.message, '[skip ci]') || contains(github.event.head_commit.message, '[skip build]'))"
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Use Node.js LTS
-        uses: actions/setup-node@v1
+          node-version: '14'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
         with:
-          node-version: 14
-      - name: Install Dependencies
-        run: npm install
-      - name: Build, configure git and push to gh-pages
-        run: |
-          #!/bin/bash
-          git clone "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" out -b gh-pages
-          npm run build
-          #cp CNAME out/ -- Only add when I have a domain
-          cp README.md out/
-          rsync -vauW public/ out/
-          cd out
-          git add --all .
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git commit -m "Svelte Site build: ${GITHUB_SHA}" || true
-          git push origin gh-pages
-          rm -rf node_modules/
-          rm -f README.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
