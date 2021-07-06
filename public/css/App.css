@@ -1,0 +1,109 @@
+#container {
+    text-align: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    white-space: nowrap;
+    display: inline;
+}
+
+.pfp {
+    display: inline-block;
+    transform: translateY(0%);
+}
+
+#stuff {
+    display: inline-block;
+    transform: translateY(-3%);
+}
+
+.title, .sub, #social, #pages {
+	text-align: start;
+}
+
+.pfp {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    border: 4px solid var(--green);
+}
+
+.title {
+    font-size: 30px;
+    color: var(--green);
+}
+
+.sub {
+    font-size: 18px;
+    color: var(--white);
+    padding-top: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul, li {
+    line-height: 35px;
+}
+
+#social {
+	padding-top: 8px;
+}
+
+.discord {
+    height: 25px;
+    width: 25px;
+}
+
+.social {
+    height: 25px;
+    width: 25px;
+    margin-left: 8px;
+}
+
+#pages {
+    font-size: 18px;
+}
+
+.bio, .projects, .line {
+    display: inline-flex;
+}
+
+#webring {
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    overflow:auto;
+    font-size: 18px; 
+}
+
+@media screen and (max-width: 750px) {
+
+    .pfp {
+        text-align: center;
+        transform: translate(-0%, -100%);
+    }
+
+    .sub {
+        transform: translateX(-50%);
+    }
+
+    #stuff {
+        text-align: center;
+        justify-content: center;
+        top: 10%;
+        left: 0%;
+        position: absolute;
+        width: 90%;
+    }
+
+    #pages {
+        transform: translateX(5%);
+    }
+  }

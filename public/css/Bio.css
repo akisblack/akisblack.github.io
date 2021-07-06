@@ -1,0 +1,32 @@
+#container {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.home, .home:hover, .home:active, .home:visited {
+    color: var(--green);
+    font-size: 36px;
+}
+
+.title {
+    font-size: 60px;
+    color: var(--green);
+}
+
+.sub {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.line {
+    width: 30%; 
+    color: var(--white);
+    border-color: var(--white);
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-SemiBold.ttf);
+}
+
+:root {
+    --green: #0bf574;
+    --dark: #272727;
+    --white: #ffffff;
+  }
+
+body {
+	background-color: var(--dark);
+	font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
