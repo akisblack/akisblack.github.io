@@ -5,12 +5,7 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 
 const inputs = [
-  "main", //string defaults to input: src/[name].js and output: public/build/[name].js
-  {
-    input: "src/bundle.js",
-    output: { file: "public/build/bundle.js", name: "main" },
-    css: "public/build/bundle.css",
-  }, //object for setting more specific values for input and output of roolup configuration
+  "bundle", //string defaults to input: src/[name].js and output: public/build/[name].js
   {
     input: "src/bio.js",
     output: { file: "public/build/bio.js", name: "bio" },
