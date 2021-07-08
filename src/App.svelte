@@ -11,7 +11,7 @@
 	let emailLink = "mailto:akisblack0@gmail.com";
 	let githubLink = "https://github.com/akisblack";
 	let discord = "img/discord.svg";
-	let twitter = "img/twittr.svg";
+	let twitter = "img/twitter.svg";
 	let email = "img/gmail.svg";
 	let github = "img/git.svg";
 	export let green;
