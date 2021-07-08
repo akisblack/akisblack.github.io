@@ -27,14 +27,8 @@ a:hover {
 }
 
 .line {
-    width:30%; 
+    width:30px; 
     color: var(--white); 
-    border-color: var(--white);
-}
-
-.line-text {
-    width:20%; 
-    color: var(--white);
     border-color: var(--white);
 }
 
