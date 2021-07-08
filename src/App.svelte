@@ -11,7 +11,7 @@
 	let emailLink = "mailto:akisblack0@gmail.com";
 	let githubLink = "https://github.com/akisblack";
 	let discord = "img/discord.svg";
-	let twitter = "img/t.svg";
+	let twitter = "img/twittr.svg";
 	let email = "img/gmail.svg";
 	let github = "img/git.svg";
 	export let green;
@@ -21,7 +21,7 @@
 
 <main>
 <div id="container">
-        <img src={pfp} alt="My PFP" title="My PFP" class="pfp">
+        <img src={pfp} alt="My PFP" class="pfp">
 
         <div id="stuff">
             <ul>
@@ -36,7 +36,7 @@
 					</div>
 					<div id="pages">
 						<a style="color:{green};" class="bio" href="bio.html">Bio</a>
-						<p class="line" style="color:{white};">|</p>
+						<p style="color:{white};" class="line">|</p>
 						<a style="color:{green};" class="projects" href="projects.html">Projects</a>
 					</div>
                 </li>
