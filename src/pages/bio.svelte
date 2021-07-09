@@ -1,23 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<svelte:head>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title>Projects | akisblack</title>
+	<title>Bio | akisblack</title>
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta property="og:url" content="https://akisblack.github.io">
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="akisblack's site">
 	<meta name="theme-color" content="#ffffff" />
-	<meta property="og:description" content="Projects | akisblack">
+	<meta property="og:description" content="Bio | akisblack">
 	<meta name="description" content="akisblack's site">
 	<meta name="author" content="akisblack">
 	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<link rel="stylesheet" href="./css/global.css">
-	<link rel="stylesheet" href="./build/projects.css">
-	<script defer src="./build/projects.js"></script>
-</head>
+	<link rel="stylesheet" href="css/Bio.css">
+</svelte:head>
+
+<script>
+	let bioText = "Not done yet."
+</script>
 
 <body>
+	<div id="container">
+	<div id="text">
+		<a href="/" class="home">Home</a>
+		<h1 class="title">Bio</h1>
+		<hr class="line">
+		<h2 class="sub">{bioText}</h2>
+
+	</div>
+	</div>
 </body>
-</html>

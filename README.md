@@ -1,48 +1,73 @@
-# multi-page-svelte
+### Oh hai! ❤
+We've created a new project called [**stackmix**](https://github.com/roxiness/stackmix). It's an experimental CLI that let's you customize new Routify templates. Go check it out!
 
-Create multiple svelte-pages with this template. Relies on default template https://github.com/sveltejs/template
+---
 
-## Usage
 
-```shell
-npx degit Tom-Siegel/multi-page-svelte
-```
+# routify-starter
 
-1. Create as many Page-files as you want (see src/main.js or src/second.js)
-2. Go to rollup-pages.config.js and set the inputs
+Starter template for [Routify](https://github.com/roxiness/routify).
 
-```javascript
-const inputs = [
-  "main", //string defaults to input: src/[name].js and output: public/build/[name].js
-  {
-    input: "src/second.js",
-    output: { file: "public/build/second.js", name: "second" },
-    css: "public/build/second.css",
-  }, //object for setting more specific values for input and output of roolup configuration
-];
-```
+### Get started
 
-3. Set up your html-files by adding the main.js, main.css and global.css
-4. Build the project
+#### Starter templates
+| Template                                  | Description                                                 |
+|-------------------------------------------|-------------------------------------------------------------|
+| [master](https://example.routify.dev/)    | Default template, includes examples folder                  |
+| [blog](https://blog-example.routify.dev/) | Generates a blog from local markdown posts. Includes mdsvex |
+| [auth](https://auth-example.routify.dev/) | Embedded login on protected pages. Includes Auth0           |
 
-```shell
-npm run build
-```
+To use a template, run:
 
-## Testing
+`npx @roxi/routify init`
 
-```shell
-npm run dev
-```
+or
 
-Or
+`npx @roxi/routify init --branch <branch-name>`
 
-```shell
-npm run start
-```
+The above commands will populate the current directory, they don't create a new one.
 
-Open your browser url: localhost:5000
+### npm scripts
 
-main.js --> http://localhost:5000/index.html
+| Syntax           | Description                                                                       |
+|------------------|-----------------------------------------------------------------------------------|
+| `dev`            | Development (port 5000)                                                           |
+| `dev:nollup`     | Development with crazy fast rebuilds (port 5000)                                  |
+| `dev-dynamic`    | Development with dynamic imports                                                  |
+| `build`          | Build a bundled app with SSR + prerendering and dynamic imports                   |
+| `serve`          | Run after a build to preview. Serves SPA on 5000 and SSR on 5005                  |
+| `deploy:*`       | Deploy to netlify or now                                                          |
+| `export`         | Create static pages from content in dist folder (used by `npm run build`)         |
 
-second.js --> http://localhost:5000/second.html
+### SSR and pre-rendering
+
+SSR and pre-rendering are included in the default build process.
+
+`npm run deploy:(now|netlify)` will deploy the app with SSR and prerendering included.
+
+To render async data, call the `$ready()` helper whenever your data is ready.
+
+If $ready() is present, rendering will be delayed till the function has been called.
+
+Otherwise it will be rendered instantly.
+
+See [src/pages/example/api/[showId].svelte](https://github.com/roxiness/routify-starter/blob/master/src/pages/example/api/%5BshowId%5D.svelte) for an example.
+
+### Production
+
+* For SPA or SSR apps please make sure that url rewrite is enabled on the server.
+* For SPA redirect to `__app.html`.
+* For SSR redirect to the lambda function or express server.
+
+### Typescript
+
+For Typescript, we recommend [@lamualfa](https://github.com/lamualfa) excellent [routify-ts](https://github.com/lamualfa/routify-ts/)
+
+New project: `npx routify-ts init <project-name> [routify-init-args]`
+
+Existing project: `npx routify-ts convert [project-directory]`
+
+
+### Issues?
+
+File on Github! See https://github.com/sveltech/routify/issues .

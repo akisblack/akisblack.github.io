@@ -1,13 +1,6 @@
+import HMR from '@roxi/routify/hmr'
 import App from './App.svelte';
 
-const app = new App({
-	target: document.body,
-	props: {
-		name: "akisblack",
-		sub: "Greek kid exploring the interwebz",
-		green: "#0bf574",
-		white: "#fff"
-	}
-});
+const app = HMR(App, { target: document.body }, 'routify-app')
 
 export default app;

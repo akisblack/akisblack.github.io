@@ -15,5 +15,5 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
-          source-directory: public
+          source-directory: dist
           build-command: npm run build
