@@ -7,4 +7,3 @@ src/tmp/
 .netlify
 assets/build
 .vercel
-!dist/CNAME
