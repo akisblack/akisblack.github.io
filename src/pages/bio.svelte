@@ -12,7 +12,7 @@
 	<meta name="description" content="akisblack's site">
 	<meta name="author" content="akisblack">
 	<link rel="icon" type="image/png" href="./img/favicon.png">
-	<link rel="stylesheet" href="css/Bio.css">
+	<link rel="stylesheet" href="../css/Bio.css">
 </svelte:head>
 
 <script>
