@@ -48,9 +48,9 @@
 						<a href={githubLink}><img src={github} alt="My GitHub" class="social"></a>
 					</div>
 					<div id="pages">
-						<a style="color:{green};" class="bio" href="bio">Bio</a>
+						<a style="color:{green};" class="bio" href="bio/">Bio</a>
 						<p style="color:{white};" class="line">|</p>
-						<a style="color:{green};" class="projects" href="projects">Projects</a>
+						<a style="color:{green};" class="projects" href="projects/">Projects</a>
 					</div>
                 </li>
             </ul>
