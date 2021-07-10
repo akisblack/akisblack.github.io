@@ -1,5 +1,5 @@
 #container {
-    text-align: center;
+    text-align: start;
     justify-content: center;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -18,10 +18,6 @@
 #stuff {
     display: inline-block;
     transform: translateY(-3%);
-}
-
-.title, .sub, #social, #pages {
-	text-align: start;
 }
 
 .pfp {
