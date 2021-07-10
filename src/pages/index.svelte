@@ -1,5 +1,5 @@
 <svelte:head>
-	<link rel="stylesheet" href="../css/App.css">
+	<link rel="stylesheet" href="../css/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Home | akisblack</title>
@@ -28,7 +28,7 @@
 	let github = "img/git.svg";
 	let green = "#0bf574";
 	let white = "#fff";
-	import Webring from './_components/Webring.svelte';
+	import Webring from './_components/webring.svelte';
 </script>
 
 <body>
