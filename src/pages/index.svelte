@@ -28,7 +28,7 @@
 	let github = "img/git.svg";
 	let green = "#0bf574";
 	let white = "#fff";
-	import Webring from './_components/webring.svelte';
+	import Webring from "./_components/webring.svelte";
 </script>
 
 <body>
