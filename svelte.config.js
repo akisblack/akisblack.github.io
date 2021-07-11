@@ -7,6 +7,7 @@ const config = {
 	extensions: ['.svelte'],
 
 	kit: {
+		adapter: adapter-static,
 		amp: false,
 		appDir: '_app',
 		files: {
