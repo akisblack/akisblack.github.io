@@ -14,5 +14,5 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
-          source-directory: .svelte-kit/output/client/_app/
+          source-directory: .build
           build-command: npm run build

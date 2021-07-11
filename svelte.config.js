@@ -13,7 +13,13 @@ const config = {
 			assets: 'src/assets',
 			routes: 'src/routes',
 			template: 'src/app.html'
-		}
+		},
+		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		})
 	},
 
 	// options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
