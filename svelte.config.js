@@ -18,7 +18,6 @@ const config = {
 		appDir: '_app',
 		files: {
 			assets: 'src/assets',
-			hooks: 'src/hooks',
 			routes: 'src/routes',
 			template: 'src/app.html'
 		},
