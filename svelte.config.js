@@ -7,7 +7,12 @@ const config = {
 	extensions: ['.svelte'],
 
 	kit: {
-		adapter: adapter-static,
+		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
 		amp: false,
 		appDir: '_app',
 		files: {
@@ -15,12 +20,6 @@ const config = {
 			routes: 'src/routes',
 			template: 'src/app.html'
 		},
-		adapter: adapter({
-			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		})
 	},
 
 	// options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
