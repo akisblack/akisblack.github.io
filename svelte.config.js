@@ -1,3 +1,4 @@
+import adapter from '@sveltejs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// options passed to svelte.compile (https://svelte.dev/docs#svelte_compile)
