@@ -1,4 +1,3 @@
-
 name: Github Pages Publish
 
 on:
@@ -15,5 +14,5 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
-          source-directory: dist
+          source-directory: .svelte-kit/output/client/_app/
           build-command: npm run build

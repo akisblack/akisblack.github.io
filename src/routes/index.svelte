@@ -31,7 +31,7 @@
 	import Webring from "./_components/Webring.svelte";
 </script>
 
-<body>
+<main>
 <div id="container">
         <img src={pfp} alt="My PFP" class="pfp">
 
@@ -56,4 +56,4 @@
         </div>
     </div>
 <Webring />
-</body>
+</main>
