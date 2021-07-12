@@ -23,7 +23,7 @@ const config = {
 			template: 'src/app.html'
 		},
 	},
-
+	floc: false,
 	// options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
 	preprocess: null
 };
