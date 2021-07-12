@@ -1,5 +1,5 @@
 <svelte:head>
-	<link rel="stylesheet" href="../css/bio.css">
+	<link rel="stylesheet" href="../css/pages.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Bio | akisblack</title>
@@ -24,7 +24,7 @@
 		<a href="/" class="home">Home</a>
 		<h1 class="title">Bio</h1>
 		<hr class="line">
-		<h2 class="sub">{bioText}</h2>
+		<h2 class="bio-text">{bioText}</h2>
 
 	</div>
 	</div>

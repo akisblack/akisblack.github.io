@@ -1,5 +1,5 @@
 <svelte:head>
-    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/pages.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Projects | akisblack</title>
@@ -24,8 +24,8 @@
             <a href="/" class="home">Home</a>
             <h1 class="title">Projects</h1>
             <hr class="line">
-            <h2 class="sub">This Website</h2>
-            <h2 class="sub-text">{websiteText}</h2>
+            <h2 class="project-name">This Website</h2>
+            <h2 class="project-text">{websiteText}</h2>
 
         </div>
     </div>

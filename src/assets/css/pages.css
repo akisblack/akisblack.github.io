@@ -3,14 +3,6 @@
     transform: translateY(10px);
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .home, .home:hover, .home:active, .home:visited {
     color: var(--green);
     font-size: 36px;
@@ -21,13 +13,23 @@ a:hover {
     color: var(--green);
 }
 
-.sub {
+.line {
+    width: 30px; 
+    color: var(--white); 
+    border-color: var(--white);
+}
+
+.project-name {
+    font-size: 24px;
+    color: var(--green);
+}
+
+.project-text {
     font-size: 24px;
     color: var(--white);
 }
 
-.line {
-    width: 30px; 
+.bio-text {
+    font-size: 24px;
     color: var(--white);
-    border-color: var(--white);
 }
