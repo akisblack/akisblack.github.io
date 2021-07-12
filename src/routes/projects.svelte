@@ -18,7 +18,7 @@
     let websiteText = "I am using this website as a chance to make my Svelte skills better.";
 </script>
 
-<body>
+<main>
     <div id="container">
         <div id="text">
             <a href="/" class="home">Home</a>
@@ -29,4 +29,4 @@
 
         </div>
     </div>
-</body>
+</main>

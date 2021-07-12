@@ -18,7 +18,7 @@
 	let bioText = "Not done yet."
 </script>
 
-<body>
+<main>
 	<div id="container">
 	<div id="text">
 		<a href="/" class="home">Home</a>
@@ -28,4 +28,4 @@
 
 	</div>
 	</div>
-</body>
+</main>
