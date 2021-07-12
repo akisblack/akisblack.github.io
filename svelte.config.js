@@ -22,8 +22,8 @@ const config = {
 			routes: 'src/routes',
 			template: 'src/app.html'
 		},
+		floc: false,
 	},
-	floc: false,
 	// options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
 	preprocess: null
 };
