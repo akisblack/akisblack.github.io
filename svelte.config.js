@@ -17,6 +17,7 @@ const config = {
 		amp: false,
 		appDir: '_app',
 		files: {
+			hooks: 'src/hooks',
 			assets: 'src/assets',
 			routes: 'src/routes',
 			template: 'src/app.html'

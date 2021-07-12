@@ -11,5 +11,8 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.34.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "html-minifier": "^4.0.0"
+  }
 }
