@@ -15,17 +15,15 @@
 </svelte:head>
 
 <script>
-    let websiteText = "I am using this website as a chance to make my Svelte skills better.";
+    import App from "./_components/projects/App.svelte"
+    import Content from "./_components/projects/Content.svelte"
 </script>
 
 <main>
     <div id="container">
         <div id="text">
-            <a href="/" class="home">Home</a>
-            <h1 class="title">Projects</h1>
-            <hr class="line">
-            <h2 class="project-name">This Website</h2>
-            <h2 class="project-text">{websiteText}</h2>
+            <App />
+            <Content />
 
         </div>
     </div>
