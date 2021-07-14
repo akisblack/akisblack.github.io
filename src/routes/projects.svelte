@@ -15,8 +15,8 @@
 </svelte:head>
 
 <script>
-    import App from "./_components/projects/App.svelte"
-    import Content from "./_components/projects/Content.svelte"
+    import App from "../components/projects/App.svelte"
+    import Content from "../components/projects/Content.svelte"
 </script>
 
 <main>

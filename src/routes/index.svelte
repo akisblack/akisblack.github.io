@@ -15,8 +15,8 @@
 </svelte:head>
 
 <script>
-	import App from "./_components/index/App.svelte"
-	import Webring from "./_components/index/Webring.svelte";
+	import App from "../components/index/App.svelte"
+	import Webring from "../components/index/Webring.svelte";
 </script>
 
 <main>

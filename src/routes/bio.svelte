@@ -15,7 +15,7 @@
 </svelte:head>
 
 <script>
-	import App from "./_components/bio/App.svelte";
+	import App from "../components/bio/App.svelte";
 </script>
 
 <main>
