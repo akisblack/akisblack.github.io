@@ -93,7 +93,8 @@ ul, li {
     #stuff {
         text-align: center;
         align-self: center;
-        transform: translateX(-115%);
+        position: relative;
+        left: -5%;
         top: 10%;
         position: absolute;
         width: 90%;
