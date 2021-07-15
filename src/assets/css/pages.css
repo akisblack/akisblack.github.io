@@ -16,7 +16,7 @@
 .line {
     width: 30px; 
     color: var(--white); 
-    border-color: var(--white);
+    border-radius: 15px;
 }
 
 .project-name {
