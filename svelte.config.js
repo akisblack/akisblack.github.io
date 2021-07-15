@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
+import path from "path"
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// options passed to svelte.compile (https://svelte.dev/docs#svelte_compile)
@@ -23,6 +24,16 @@ const config = {
 			template: 'src/app.html'
 		},
 		floc: false,
+		vite: {
+			resolve: {
+			  alias: {
+				$css: path.resolve("./src/assets/css"),
+				$fonts: path.resolve("./src/assets/fonts"),
+				$img: path.resolve("./src/assets/img"),
+				$components: path.resolve("./src/components")
+			  }
+			}
+		  },
 	},
 	// options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
 	preprocess: null
