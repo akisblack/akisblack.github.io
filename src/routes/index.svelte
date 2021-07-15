@@ -1,5 +1,5 @@
 <svelte:head>
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="/css/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Home | akisblack</title>
@@ -11,7 +11,6 @@
 	<meta property="og:description" content="Home | akisblack">
 	<meta name="description" content="akisblack's site">
 	<meta name="author" content="akisblack">
-	<link rel="icon" type="image/png" href="img/favicon.png">
 </svelte:head>
 
 <script>
