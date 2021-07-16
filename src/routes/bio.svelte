@@ -18,5 +18,5 @@
 </script>
 
 <main>
-<App />
+	<App />
 </main>

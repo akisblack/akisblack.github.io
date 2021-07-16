@@ -20,10 +20,9 @@
 
 <main>
     <div id="container">
-        <div id="text">
+        <div id="stuff">
             <App />
             <Content />
-
         </div>
     </div>
 </main>

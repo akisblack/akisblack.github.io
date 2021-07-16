@@ -19,6 +19,6 @@
 </script>
 
 <main>
-<App />
-<Webring />
+	<App />
+	<Webring />
 </main>
