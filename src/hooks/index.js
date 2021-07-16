@@ -1,5 +1,5 @@
-import { minify } from 'html-minifier';
-import { prerendering } from '$app/env';
+import { minify } from "html-minifier";
+import { prerendering } from "$app/env";
 
 export const prerender = true;
 
@@ -25,7 +25,7 @@ const minification_options = {
 export async function handle({ request, resolve }) {
   const response = await resolve(request);
 
-  if (prerendering && response.headers['content-type'] === 'text/html') {
+  if (prerendering && response.headers["content-type"] === "text/html") {
     response.body = minify(response.body, minification_options);
   }
 
