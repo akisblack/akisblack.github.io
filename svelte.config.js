@@ -24,6 +24,12 @@ const config = {
 			template: "./src/app.html"
 		},
 		floc: false,
+		prerender: {
+			crawl: true,
+			enabled: true,
+			force: false,
+			pages: ['*']
+		},
 		vite: {
 			resolve: {
 			  alias: {
