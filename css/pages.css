@@ -1,0 +1,35 @@
+#container {
+    text-align: center;
+    transform: translateY(10px);
+}
+
+.home, .home:hover, .home:active, .home:visited {
+    color: var(--green);
+    font-size: 36px;
+}
+
+.title {
+    font-size: 60px;
+    color: var(--green);
+}
+
+.line {
+    width: 30px; 
+    color: var(--white); 
+    border-radius: 15px;
+}
+
+.project-name {
+    font-size: 24px;
+    color: var(--green);
+}
+
+.project-text {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.bio-text {
+    font-size: 24px;
+    color: var(--white);
+}
