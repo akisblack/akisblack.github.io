@@ -4,10 +4,14 @@ Copyright (C) 2021 akisblack
 
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-1. Modified work shall only be distributed under the same license.
+1. Modified or unmodified versions of this software shall only be distributed
+under the same license.
 
-2. Modified work must contain proper attribution/credit to the original author in either a README file or in the program itself.
+2. Modified or unmodified versions of this software must contain proper
+attribution/credit to the original authors in either a README file or in the
+software itself.
 
-3. Using code as a library on a bigger program licensed under a different license is allowed, however, credit must be given to the original author.
+3. Using this software as a library on bigger software licensed under a different
+license is allowed, however, credit must be given to the original authors.
 
-4. Code is provided with no warranty.
+4. This software is provided with no warranty.
