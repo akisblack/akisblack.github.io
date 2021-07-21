@@ -1,5 +1,4 @@
 #container {
-    text-align: start;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -8,7 +7,7 @@
 }
 
 #stuff {
-    display: inline-block;
+    display: inline-flex;
     vertical-align: middle;
 }
 
@@ -67,21 +66,12 @@ ul, li {
 @media screen and (max-width: 750px) {
 
     .pfp {
-        text-align: center;
         transform: translate(-0%, -100%);
-    }
-
-    .sub {
-        transform: translateX(-50%);
     }
 
     #stuff {
         text-align: center;
-        align-self: center;
-        left: -7%;
-        top: 10%;
+        left: -50%;
         position: absolute;
-        width: 100%;
     }
-
   }
