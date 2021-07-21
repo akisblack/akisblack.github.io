@@ -9,10 +9,11 @@
 
 #stuff {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .pfp {
-    transform: translateY(5px);
+    vertical-align: middle;
     height: 175px;
     width: 175px;
     border-radius: 15px;
