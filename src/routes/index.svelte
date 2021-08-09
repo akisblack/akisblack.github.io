@@ -15,10 +15,8 @@
 
 <script>
 	import App from "$components/index/App.svelte"
-	import Webring from "$components/index/Webring.svelte";
 </script>
 
 <main>
 	<App />
-	<Webring />
 </main>

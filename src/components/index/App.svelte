@@ -6,10 +6,12 @@ let discordLink = "https://discord.gg/Mc9RUxwPrF";
 let twitterLink = "https://twitter.com/akisblack_";
 let emailLink = "mailto:akisblack0@gmail.com";
 let githubLink = "https://github.com/akisblack";
+let matrixLink = "https://matrix.to/#/@akisblack_:matrix.org";
 let discord = "img/discord.svg";
 let twitter = "img/twitter.svg";
 let email = "img/gmail.svg";
-let github = "img/git.svg";
+let github = "img/github.svg";
+let matrix = "img/matrix.svg";
 let green = "#0bf574";
 let white = "#fff";
 </script>
@@ -27,6 +29,7 @@ let white = "#fff";
                     <a href={twitterLink}><img src={twitter} alt="My Twitter" class="social"></a>
                     <a href={emailLink}><img src={email} alt="My e-Mail" class="social"></a>
                     <a href={githubLink}><img src={github} alt="My GitHub" class="social"></a>
+                    <a href={matrixLink}><img src={matrix} alt="My Matrix" class="social"></a>
                 </div>
                 <div id="pages">
                     <a style="color:{green};" class="bio" href="bio/">Bio</a>
