@@ -10,7 +10,7 @@
 
 .title {
     font-size: 60px;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .line {
@@ -21,7 +21,7 @@
 
 .project-name {
     font-size: 24px;
-    color: var(--green);
+    color: var(--orange);
 }
 
 .project-text {

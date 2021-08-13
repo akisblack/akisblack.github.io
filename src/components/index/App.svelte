@@ -9,9 +9,11 @@ let githubLink = "https://github.com/akisblack";
 let matrixLink = "https://matrix.to/#/@akisblack_:matrix.org";
 let discord = "img/discord.svg";
 let twitter = "img/twitter.svg";
-let email = "img/gmail.svg";
+let email = "img/mail.svg";
 let github = "img/github.svg";
 let matrix = "img/matrix.svg";
+let bio = "img/help-circle.svg";
+let projects = "img/tool.svg"
 let green = "#0bf574";
 let white = "#fff";
 </script>
@@ -32,9 +34,9 @@ let white = "#fff";
                     <a href={matrixLink}><img src={matrix} alt="My Matrix" class="social"></a>
                 </div>
                 <div id="pages">
-                    <a style="color:{green};" class="bio" href="bio/">Bio</a>
+                    <a style="color:{green};" class="bio" href="bio/"><img src={bio} alt="My bio"> Bio</a>
                     <p style="color:{white};" class="line">|</p>
-                    <a style="color:{green};" class="projects" href="projects/">Projects</a>
+                    <a style="color:{green};" class="projects" href="projects/"><img src={projects} alt="My projects"> Projects</a>
                 </div>
             </li>
         </ul>

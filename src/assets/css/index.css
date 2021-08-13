@@ -16,7 +16,7 @@
     height: 175px;
     width: 175px;
     border-radius: 15px;
-    border: 4px solid var(--green);
+    border: 4px solid var(--orange);
 }
 
 .title {
@@ -51,8 +51,12 @@ ul, li {
     font-size: 18px;
 }
 
+#pages img {
+    width: 16px;
+}
+
 .bio, .projects, .line {
-    display: inline-flex;
+    display: inline-block;
 }
 
 #webring {
