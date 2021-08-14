@@ -1,22 +1,20 @@
 <svelte:head>
 	<link rel="stylesheet" href="/css/pages.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
 	<title>Bio | akisblack</title>
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta property="og:url" content="https://akisblack.github.io">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="akisblack's site">
-	<meta name="theme-color" content="#ffffff" />
 	<meta property="og:description" content="Bio | akisblack">
-	<meta name="description" content="akisblack's site">
-	<meta name="author" content="akisblack">
 </svelte:head>
 
 <script>
-	import App from "$components/bio/App.svelte";
+	let bioText = "Not done yet."
 </script>
 
 <main>
-	<App />
+	<div id="container">
+		<div id="stuff">
+			<a href="/" class="home"><i class="mdi mdi-home-outline"></i> Home</a>
+			<h1 class="title">Bio</h1>
+			<hr class="line">
+			<h2 class="bio-text">{bioText}</h2>
+		</div>
+	</div>
 </main>

@@ -3,7 +3,7 @@
     transform: translateY(10px);
 }
 
-.home, .home:hover, .home:active, .home:visited {
+.home, .home:active, .home:visited {
     color: var(--green);
     font-size: 36px;
 }
