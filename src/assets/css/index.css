@@ -35,9 +35,7 @@ ul {
 	list-style: none;
 }
 
-.social {
-	height: 24px;
-	width: 24px;
+#social > * {
 	padding-inline-end: 8px;
 }
 

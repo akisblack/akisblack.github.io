@@ -32,11 +32,11 @@
 					<h1 class="title">{name}</h1>
 					<h2 class="sub">{sub}</h2>
 					<div id="social">
-						<a href={discordLink}><img src={discord} alt="My Discord server" class="social"></a>
-						<a href={twitterLink}><img src={twitter} alt="My Twitter" class="social"></a>
-						<a href={emailLink}><img src={email} alt="My e-Mail" class="social"></a>
-						<a href={githubLink}><img src={github} alt="My GitHub" class="social"></a>
-						<a href={matrixLink}><img src={matrix} alt="My Matrix" class="social"></a>
+						<a href={discordLink}><img src={discord} alt="My Discord server"></a>
+						<a href={twitterLink}><img src={twitter} alt="My Twitter"></a>
+						<a href={emailLink}><img src={email} alt="My e-Mail"></a>
+						<a href={githubLink}><img src={github} alt="My GitHub"></a>
+						<a href={matrixLink}><img src={matrix} alt="My Matrix"></a>
 					</div>
 					<div id="pages">
 						<a style="color:{green};" class="bio" href="bio/"><i class="mdi mdi-help-circle-outline"></i> Bio</a>

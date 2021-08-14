@@ -1,6 +1,5 @@
 #container {
     text-align: center;
-    transform: translateY(10px);
 }
 
 .home, .home:active, .home:visited {
@@ -24,12 +23,7 @@
     color: var(--orange);
 }
 
-.project-text {
-    font-size: 24px;
-    color: var(--white);
-}
-
-.bio-text {
+.project-text, .bio-text {
     font-size: 24px;
     color: var(--white);
 }
