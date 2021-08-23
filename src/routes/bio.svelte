@@ -11,15 +11,15 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 </svelte:head>
 
 <script>
-	let bioText = "Not done yet."
+	let bioText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ad voluptatibus, eaque libero quasi distinctio quis ipsa aperiam iste facere voluptates, officia autem inventore molestias deserunt, ut quia necessitatibus vel?"
+	import Header from "$components/subpageHeader.svelte";
 </script>
 
 <main>
 	<div id="container">
+		<Header />
 		<div id="stuff">
-			<a href="/" class="home"><i class="mdi mdi-home-outline"></i> Home</a>
 			<h1 class="title">Bio</h1>
-			<hr class="line">
 			<h2 class="bio-text">{bioText}</h2>
 		</div>
 	</div>

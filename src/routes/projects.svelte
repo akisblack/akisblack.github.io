@@ -12,15 +12,14 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <script>
     import Content from "$components/projectsContent.svelte";
+    import Header from "$components/subpageHeader.svelte";
 </script>
 
 <main>
     <div id="container">
+        <Header />
         <div id="stuff">
-            <a href="/" class="home"><i class="mdi mdi-home-outline"></i> Home</a>
-
 			<h1 class="title">Projects</h1>
-			<hr class="line">
             <Content />
         </div>
     </div>

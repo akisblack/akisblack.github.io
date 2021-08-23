@@ -45,9 +45,9 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 						<a href={matrixLink}><img src={matrix} alt="My Matrix"></a>
 					</div>
 					<div id="pages">
-						<a style="color:{green};" class="bio" href="bio/"><i class="mdi mdi-help-circle-outline"></i> Bio</a>
+						<a style="color:{green};" class="bio" href="bio"><i class="mdi mdi-help-circle-outline"></i> Bio</a>
 						<p style="color:{white};" class="line">|</p>
-						<a style="color:{green};" class="projects" href="projects/"><i class="mdi mdi-wrench-outline"></i> Projects</a>
+						<a style="color:{green};" class="projects" href="projects"><i class="mdi mdi-wrench-outline"></i> Projects</a>
 					</div>
 				</li>
 			</ul>

@@ -4,24 +4,13 @@ This work is free. You can redistribute it and/or modify it under the terms
 of the akisblack Software License, which can be found here: http://github.com/akisblack/akisblack-software-license.
 */
 
-#container {
-    text-align: center;
-}
-
-.home, .home:active, .home:visited {
-    color: var(--green);
-    font-size: 36px;
+#stuff {
+    padding: 0 10% 0 10%;
 }
 
 .title {
     font-size: 60px;
     color: var(--blue);
-}
-
-.line {
-    width: 30px; 
-    color: var(--white); 
-    border-radius: 15px;
 }
 
 .project-name {
@@ -30,6 +19,18 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 }
 
 .project-text, .bio-text {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--white);
+    text-align: justify;
+}
+
+.container {
+    border: var(--blue) 4px solid;
+    border-radius: 15px;
+    padding: 2em;
+    background-color: var(--pfp-color);
+}
+
+.outer-container > *:not(:first-child) {
+    margin-top: 2em;
 }

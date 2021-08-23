@@ -6,10 +6,18 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <script>
     let websiteText = "I am using this website as a chance to make my Svelte skills better.";
-    let fairLicenseText = "The Fair License is an OSS license made to be simple and have a good amount of restrictions as well."
+    let aslText = "A license that I use for my current projects."
 </script>
 
-<h2 class="project-name">This Website</h2>
-<h2 class="project-text">{websiteText}</h2>
-<h2 class="project-name">Fair License</h2>
-<h2 class="project-text">{fairLicenseText}</h2>
+<div class="outer-container">
+    <div class="container">
+        <a href="https://github.com/akisblack/akisblack.github.io" class="project-name"><i class="mdi mdi-web"></i> This Website</a>
+        <h2 class="project-text">{websiteText}</h2>
+    </div>
+
+    <div class="container">
+        <a href="https://github.com/akisblack/akisblack-software-license" class="project-name"><i class="mdi mdi-bank-outline"></i> akisblack Software License (ASL)</a>
+        <h2 class="project-text">{aslText}</h2>
+    </div>
+
+</div>
