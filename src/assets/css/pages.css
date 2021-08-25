@@ -31,6 +31,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
     background-color: var(--pfp-color);
 }
 
-.outer-container > *:not(:first-child) {
+.container:not(:first-child) {
     margin-top: 2em;
 }
