@@ -5,32 +5,32 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 */
 
 #stuff {
-    padding: 0 10% 0 10%;
+	padding: 0 10% 0 10%;
 }
 
 .title {
-    font-size: 60px;
-    color: var(--blue);
+	font-size: 60px;
+	color: var(--blue);
 }
 
 .project-name {
-    font-size: 24px;
-    color: var(--orange);
+	font-size: 24px;
+	color: var(--orange);
 }
 
 .project-text, .bio-text {
-    font-size: 20px;
-    color: var(--white);
-    text-align: justify;
+	font-size: 20px;
+	color: var(--white);
+	text-align: justify;
 }
 
 .container {
-    border: var(--blue) 4px solid;
-    border-radius: 15px;
-    padding: 2em;
-    background-color: var(--pfp-color);
+	border: var(--blue) 4px solid;
+	border-radius: 15px;
+	padding: 2em;
+	background-color: var(--pfp-color);
 }
 
 .container:not(:first-child) {
-    margin-top: 2em;
+	margin-top: 2em;
 }

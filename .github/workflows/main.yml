@@ -22,3 +22,4 @@ jobs:
           folder: build # The folder the action should deploy.
           commit-message: Deployed to GitHub Pages 🚀
           clean: true
+          clean: true
