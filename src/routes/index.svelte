@@ -40,7 +40,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 					<div id="social">
 						<a href={discordLink}><img src={discord} alt="My Discord server"></a>
 						<a href={twitterLink}><img src={twitter} alt="My Twitter"></a>
-						<a href={emailLink}><img src={email} alt="My e-Mail"></a>
+						<a href={emailLink}><img src={email} alt="My Email"></a>
 						<a href={githubLink}><img src={github} alt="My GitHub"></a>
 						<a href={matrixLink}><img src={matrix} alt="My Matrix"></a>
 					</div>
