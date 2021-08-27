@@ -11,22 +11,8 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 </svelte:head>
 
 <script>
-    import Project from '$components/projects.svelte';
-
-    const projects =  {
-        "Website": {
-            "name": "This Website",
-            "icon": "mdi mdi-web",
-            "description": "I am using this website as a chance to make my Svelte skills better.",
-            "url": "https://github.com/akisblack/akisblack.github.io",
-        },
-        "License": {
-            "name": "akisblack Software License (ASL)",
-            "icon": "mdi mdi-bank-outline",
-            "description": "A license that I use for my current projects.",
-            "url": "https://github.com/akisblack/akisblack-software-license",
-        }
-    }
+    import Project from '$components/Projects.svelte';
+    import projects from "$components/projects.json";
 </script>
 
 <div id="container">
