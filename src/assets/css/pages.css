@@ -18,7 +18,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	color: var(--orange);
 }
 
-.project-text, .bio-text {
+.desc {
 	font-size: 20px;
 	color: var(--white);
 	text-align: justify;

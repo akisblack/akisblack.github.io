@@ -20,7 +20,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 .pfp {
 	vertical-align: middle;
 	height: 175px;
-	width: 175px;
 	border-radius: 15px;
 	border: 4px solid var(--orange);
 }
@@ -50,7 +49,7 @@ ul {
 	font-size: 18px;
 }
 
-.bio, .projects, .line {
+#pages > * {
 	display: inline-flex;
 }
 

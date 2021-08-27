@@ -6,7 +6,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <div class="container">
 	<a href={project.url} class="project-name"><i class="{project.icon}"></i> {project.name}</a>
-	<h2 class="project-text">{project.description}</h2>
+	<h2 class="desc">{project.description}</h2>
 </div>
 
 <script>

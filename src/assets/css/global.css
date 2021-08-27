@@ -7,7 +7,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 @font-face {
 	font-family: Quicksand;
 	src: url(/fonts/Quicksand-Medium.ttf);
-	font-display: swap;
 }
 
 :root {
@@ -22,7 +21,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 body {
 	background-color: var(--dark);
-	font-family: "Quicksand", sans-serif;
+	font-family: Quicksand, sans-serif;
 	margin: 0;
 }
 

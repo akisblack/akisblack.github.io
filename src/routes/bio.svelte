@@ -16,5 +16,5 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <div id="container">
 	<h1 class="title">Bio</h1>
-	<h2 class="bio-text">{bioText}</h2>
+	<h2 class="desc">{bioText}</h2>
 </div>
