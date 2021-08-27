@@ -12,7 +12,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <script>
     import Project from '$components/Projects.svelte';
-    import projects from "$components/projects.json";
+    import projects from "$components/Projects.json";
 </script>
 
 <div id="container">
