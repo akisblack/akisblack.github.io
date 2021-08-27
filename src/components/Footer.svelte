@@ -43,7 +43,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	#nav > * {
 		float: left;
 		text-align: center;
-		padding: 1.1em 0.5em;
+		padding: 1em 0.5em;
 		color: var(--green);
 		padding-inline-end: 0.5em;
 	}
