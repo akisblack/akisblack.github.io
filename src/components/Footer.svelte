@@ -40,14 +40,17 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 		color: #ff5650;
 	}
 
-	#nav {
+	#nav > * {
 		float: left;
 		text-align: center;
 		padding: 1.1em 0.5em;
 		color: var(--green);
+		padding-inline-end: 0.5em;
 	}
 
-	#nav > * {
-		padding-inline-end: 0.5em;
+	@media screen and (max-width: 539px) {
+		#nav {
+			float: right;
+		}
 	}
 </style>
