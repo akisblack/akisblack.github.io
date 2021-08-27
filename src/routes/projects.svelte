@@ -11,7 +11,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 </svelte:head>
 
 <script>
-    import Header from "$components/subpageHeader.svelte";
     import Project from '$components/projects.svelte';
 
     const projects =  {
@@ -30,13 +29,8 @@ of the akisblack Software License, which can be found here: http://github.com/ak
     }
 </script>
 
-<main>
-    <div id="container">
-        <Header />
-        <div id="stuff">
-			<h1 class="title">Projects</h1>
-                <Project project={projects.Website}/>
-                <Project project={projects.License}/>
-        </div>
-    </div>
-</main>
+<div id="container">
+    <h1 class="title">Projects</h1>
+    <Project project={projects.Website}/>
+    <Project project={projects.License}/>
+</div>

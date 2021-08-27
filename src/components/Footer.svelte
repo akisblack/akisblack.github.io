@@ -4,26 +4,50 @@ This work is free. You can redistribute it and/or modify it under the terms
 of the akisblack Software License, which can be found here: http://github.com/akisblack/akisblack-software-license.
 -->
 
-<header>
-	<div id="container">
+<footer>
+	<div id="nav">
 		<a href="/"><i class="mdi mdi-home-outline"></i> Home</a>
 		<a href="bio"><i class="mdi mdi-help-circle-outline"></i> Bio</a>
 		<a href="projects/"><i class="mdi mdi-wrench-outline"></i> Projects</a>
 	</div>
-</header>
+	<p>Made with <a href="https://kit.svelte.dev"> SvelteKit</a> and <span>&lt;3</span> by Akis.</p>
+</footer>
 
 <style>
-	header {
+	footer {
 		background-color: var(--pfp-color);
 		overflow: hidden;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
 	}
 
-	a {
+	a:hover {
+		color: var(--pink);
+	}
+
+	p, a {
+		font-size: 17px;
+		color: var(--green);
+	}
+
+	p {
+		float: right;
+		padding-right: 0.5em;
+	}
+
+	span {
+		color: #ff5650;
+	}
+
+	#nav {
 		float: left;
 		text-align: center;
-		text-decoration: none;
-		font-size: 17px;
 		padding: 1.1em 0.5em;
 		color: var(--green);
+	}
+
+	#nav > * {
+		padding-inline-end: 0.5em;
 	}
 </style>

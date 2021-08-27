@@ -12,15 +12,9 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <script>
 	let bioText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ad voluptatibus, eaque libero quasi distinctio quis ipsa aperiam iste facere voluptates, officia autem inventore molestias deserunt, ut quia necessitatibus vel?"
-	import Header from "$components/subpageHeader.svelte";
 </script>
 
-<main>
-	<div id="container">
-		<Header />
-		<div id="stuff">
-			<h1 class="title">Bio</h1>
-			<h2 class="bio-text">{bioText}</h2>
-		</div>
-	</div>
-</main>
+<div id="container">
+	<h1 class="title">Bio</h1>
+	<h2 class="bio-text">{bioText}</h2>
+</div>
