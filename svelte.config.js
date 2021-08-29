@@ -1,10 +1,14 @@
+import { mdsvex } from "mdsvex";
+import mdsvexConfig from "./mdsvex.config.js";
 import adapter from "@sveltejs/adapter-static";
 import path from "path"
 import json from "@rollup/plugin-json"
 /** @type {import('@sveltejs/kit').Config} */
 
 const config = {
-	kit: {
+    "extensions": [".svelte", ...mdsvexConfig.extensions],
+
+    kit: {
 		adapter: adapter(),
 		files: {
 			assets: "./src/assets",
@@ -21,6 +25,8 @@ const config = {
 			}
 		  },
 	},
+
+    preprocess: [mdsvex(mdsvexConfig)]
 };
 
 export default config;

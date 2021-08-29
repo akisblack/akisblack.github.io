@@ -47,6 +47,8 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 					<a style="color:{green};" href="bio"><i class="mdi mdi-help-circle-outline"></i> Bio</a>
 					<p style="color:{white};">|</p>
 					<a style="color:{green};" href="projects"><i class="mdi mdi-wrench-outline"></i> Projects</a>
+					<p style="color:{white};">|</p>
+					<a style="color:{green};" href="blog"><i class="mdi mdi-book-outline"></i>Blog</a>
 				</div>
 			</li>
 		</ul>
