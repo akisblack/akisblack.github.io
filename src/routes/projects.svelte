@@ -11,12 +11,15 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 </svelte:head>
 
 <script>
-    import Project from '$components/Projects.svelte';
     import projects from "$components/Projects.json";
 </script>
 
 <div id="container">
     <h1 class="title">Projects</h1>
-    <Project project={projects.Website}/>
-    <Project project={projects.License}/>
+    {#each projects as project}
+        <div class="container">
+            <a href={project.url} class="project-name"><i class="{project.icon}"></i> {project.name}</a>
+            <h2 class="desc">{project.description}</h2>
+        </div>
+    {/each}
 </div>

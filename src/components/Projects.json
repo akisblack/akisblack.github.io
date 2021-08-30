@@ -1,14 +1,14 @@
-{
-	"Website": {
+[
+	{
 		"name": "This Website",
 		"icon": "mdi mdi-web",
 		"description": "I am using this website as a chance to make my Svelte skills better.",
 		"url": "https://github.com/akisblack/akisblack.github.io"
 	},
-	"License": {
+	{
 		"name": "akisblack Software License (ASL)",
 		"icon": "mdi mdi-bank-outline",
 		"description": "A license that I use for my current projects.",
 		"url": "https://github.com/akisblack/akisblack-software-license"
 	}
-}
+]
