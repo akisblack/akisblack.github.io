@@ -24,27 +24,14 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 <div id="container">
 	<h1 class="title">Blog</h1>
-	<ul>
-		<li>
-			{#each posts as post}
-				<!-- we're using the non-standard `rel=prefetch` attribute to
-						tell Sapper to load the data for the page as soon as
-						the user hovers over the link or taps it, instead of
-						waiting for the 'click' event -->
-				<li><a rel="prefetch" href="blog/{post.permalink}">- {post.title}</a></li>
-			{/each}
-		</li>
-	</ul>
+		{#each posts as post}
+			<!-- we're using the non-standard `rel=prefetch` attribute to
+					tell Sapper to load the data for the page as soon as
+					the user hovers over the link or taps it, instead of
+					waiting for the 'click' event -->
+				<div class="container">
+					<a rel="prefetch" href="blog/{post.permalink}" class="project-name">{post.title}</a>
+					<h2 class="desc">{post.summary}</h2>
+				</div>
+		{/each}
 </div>
-
-<style>
-	ul {
-		list-style: none;
-		padding-left: 0em;
-	}
-
-	a {
-		font-size: 17px;
-		color: var(--green);
-	}
-</style>

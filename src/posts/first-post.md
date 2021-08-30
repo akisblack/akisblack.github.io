@@ -1,7 +1,7 @@
 ---
 permalink: first-post
 title: First post
-summary: hello
+summary: deez nuts
 date: 29/8/2021
 author: akisblack
 ---

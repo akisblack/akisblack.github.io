@@ -10,7 +10,8 @@ export async function get() {
 	const posts = (await getPosts()).map(post => {
 			return {
 				title: post.title,
-				permalink: post.permalink
+				permalink: post.permalink,
+				summary: post.summary
 			};
 		})
 	return {
