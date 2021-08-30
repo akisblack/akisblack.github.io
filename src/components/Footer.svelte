@@ -23,18 +23,11 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 		bottom: 0;
 	}
 
-	a:hover {
-		color: var(--pink);
-	}
-
-	p, a {
-		font-size: 17px;
-		color: var(--green);
-	}
-
 	p {
 		float: right;
 		padding-right: 0.5em;
+		font-size: 17px;
+		color: var(--green);
 	}
 
 	span {
@@ -43,10 +36,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 
 	#nav > * {
 		float: left;
-		text-align: center;
 		padding: 1em 0.5em;
-		color: var(--green);
-		padding-inline-end: 0.5em;
 	}
 
 	@media screen and (max-width: 539px) {

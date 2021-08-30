@@ -47,6 +47,7 @@ ul {
 #pages {
 	margin-top: -10px;
 	font-size: 18px;
+	color: var(--white);
 }
 
 #pages > * {
