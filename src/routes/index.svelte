@@ -14,8 +14,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	let name = "akisblack";
 	let sub = "Greek kid exploring the interwebz";
 	import pfp from "$img/pfp.png";
-	let green = "#0bf574";
-	let white = "#fff";
 	import SocialLink from '$components/SocialLink.svelte';
 	import socials from "$components/SocialLink.json";
 </script>
