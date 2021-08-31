@@ -1,12 +1,12 @@
 # Website
 
-### My site written in ![SvelteKit](https://kit.svelte.dev)
+### My site written in ![SvelteKit](https://kit.svelte.dev).
 
 ## Developing
 
 ### Prerequisites
-- Install ![node.js](https://nodejs.org)
-- Install ![pnpm](https://pnpm.io/)
+- Install [node.js](https://nodejs.org)
+- Install [pnpm](https://pnpm.io/)
 
 ### Install dependencies
 ```bash
