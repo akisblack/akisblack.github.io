@@ -16,17 +16,17 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 		body.push(posts[path]().then(({ metadata }) => metadata));
 	}
 	export async function load() {
-		const posts = await Promise.all(body);
+		const articles = await Promise.all(body);
 		return {
 			props: {
-				posts
+				articles
 			}
 		};
 	}
 </script>
 
 <script>
-	export let posts;
+	export let articles;
 	function sortByDate(a, b) {
 		const dateA = a.date;
 		const dateB = b.date;
@@ -38,18 +38,18 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 		}
 		return comparison * -1;
 	}
-	posts.sort(sortByDate);
+	articles.sort(sortByDate);
 </script>
 
 <div id="pages-container">
 	<h1 class="pages-title">Blog</h1>
-	{#each posts as { permalink, title, summary }}
+	{#each articles as { slug, title, summary }}
 			<!-- we're using the non-standard `rel=prefetch` attribute to
 					tell Sapper to load the data for the page as soon as
 					the user hovers over the link or taps it, instead of
 					waiting for the 'click' event -->
 				<div class="pages-container">
-					<a rel="prefetch" href="blog/{permalink}" class="project-name">{title}</a>
+					<a rel="prefetch" href="blog/{slug}" class="project-name">{title}</a>
 					<h2 class="pages-desc">{summary}</h2>
 				</div>
 		{/each}

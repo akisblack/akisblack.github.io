@@ -16,7 +16,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	export async function load({ page }) {
 		return {
 			props: {
-				Post: await import(`../../posts/${page.params.permalink}.md`)
+				Post: await import(`../../posts/${page.params.slug}.md`)
 			}
 		}
 	}
