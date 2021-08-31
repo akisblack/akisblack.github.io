@@ -5,7 +5,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 -->
 
 <svelte:head>
-	<link rel="stylesheet" href="../../lib/Pages.css">
 	<title>Bio | akisblack</title>
 	<meta property="og:description" content="Bio | akisblack">
 </svelte:head>
