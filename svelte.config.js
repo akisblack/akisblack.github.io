@@ -17,10 +17,7 @@ const config = {
 		vite: {
 			resolve: {
 			  alias: {
-				$css: path.resolve("./src/assets/css"),
-				$fonts: path.resolve("./src/assets/fonts"),
-				$img: path.resolve("./src/assets/img"),
-				$components: path.resolve("./src/components")
+				$img: path.resolve("./src/assets/img")
 			  },
 			  plugins: [json()],
 			}
