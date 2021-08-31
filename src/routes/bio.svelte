@@ -5,7 +5,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 -->
 
 <svelte:head>
-	<link rel="stylesheet" href="/css/pages.css">
+	<link rel="stylesheet" href="../../lib/Pages.css">
 	<title>Bio | akisblack</title>
 	<meta property="og:description" content="Bio | akisblack">
 </svelte:head>
@@ -14,7 +14,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	let bioText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ad voluptatibus, eaque libero quasi distinctio quis ipsa aperiam iste facere voluptates, officia autem inventore molestias deserunt, ut quia necessitatibus vel?"
 </script>
 
-<div id="container">
-	<h1 class="title">Bio</h1>
-	<h2 class="desc">{bioText}</h2>
+<div id="pages-container">
+	<h1 class="pages-title">Bio</h1>
+	<h2 class="pages-desc">{bioText}</h2>
 </div>

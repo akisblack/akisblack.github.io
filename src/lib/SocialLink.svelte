@@ -9,3 +9,8 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 <script>
 	export let social;
 </script>
+<style>
+	a > * {
+		padding-inline-end: 8px;
+	}
+</style>

@@ -5,7 +5,6 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 -->
 
 <svelte:head>
-	<link rel="stylesheet" href="css/index.css">
 	<title>Home | akisblack</title>
 	<meta property="og:description" content="Home | akisblack">
 </svelte:head>
@@ -14,8 +13,8 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	let name = "akisblack";
 	let sub = "Greek kid exploring the interwebz";
 	import pfp from "$img/pfp.png";
-	import SocialLink from '$components/SocialLink.svelte';
-	import socials from "$components/SocialLink.json";
+	import SocialLink from '$lib/SocialLink.svelte';
+	import socials from "$lib/SocialLink.json";
 </script>
 
 <div id="container">
@@ -44,3 +43,64 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 		</ul>
 	</div>
 </div>
+
+<style>
+	#container {
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		white-space: nowrap;
+	}
+
+	#stuff {
+		display: inline-flex;
+		vertical-align: middle;
+	}
+
+	.pfp {
+		vertical-align: middle;
+		height: 175px;
+		border-radius: 15px;
+		border: 4px solid var(--orange);
+	}
+
+	.title {
+		font-size: 30px;
+		color: var(--green);
+	}
+
+	.sub {
+		font-size: 18px;
+		color: var(--white);
+		padding-bottom: 4px;
+	}
+
+	ul {
+		line-height: 35px;
+		list-style: none;
+	}
+
+	#pages {
+		margin-top: -10px;
+		font-size: 18px;
+		color: var(--white);
+	}
+
+	#pages > * {
+		display: inline-flex;
+	}
+
+	@media screen and (max-width: 750px) {
+
+		.pfp {
+			transform: translateY(-100%);
+		}
+
+		#stuff {
+			text-align: center;
+			left: -50%;
+			position: absolute;
+		}
+	}
+</style>
