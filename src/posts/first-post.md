@@ -1,8 +1,8 @@
 ---
-permalink: z-9-first-post
+permalink: first-post
 title: First post
 summary: deez nuts
-date: 29/8/2021
+date: "2021-08-29"
 author: akisblack
 ---
 

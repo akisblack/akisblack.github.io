@@ -1,8 +1,8 @@
 ---
-permalink: z-8-website-in-sveltekit
+permalink: website-in-sveltekit
 title: Writing my website in SvelteKit
 summary: How and with what tools I wrote my site.
-date: 31/8/2021
+date: "2021-08-31"
 author: akisblack
 ---
 
