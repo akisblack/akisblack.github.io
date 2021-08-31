@@ -14,7 +14,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	<p>Made with <a href="https://kit.svelte.dev"> SvelteKit</a> and <span>&lt;3</span> by Akis.</p>
 </footer>
 
-<style>
+<style lang="postcss">
 	footer {
 		background-color: var(--pfp-color);
 		overflow: hidden;

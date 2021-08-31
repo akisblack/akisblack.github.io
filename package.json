@@ -10,8 +10,14 @@
 		"@rollup/plugin-json": "^4.1.0",
 		"@sveltejs/adapter-static": "^1.0.0-next.13",
 		"@sveltejs/kit": "next",
+		"autoprefixer": "^10.3.1",
+		"cssnano": "^5.0.6",
 		"mdsvex": "^0.9.8",
-		"svelte": "^3.34.0"
+		"postcss": "^8.3.5",
+		"postcss-load-config": "^3.1.0",
+		"postcss-nesting": "^8.0.1",
+		"svelte": "^3.34.0",
+		"svelte-preprocess": "^4.7.4"
 	},
 	"type": "module",
 	"dependencies": {

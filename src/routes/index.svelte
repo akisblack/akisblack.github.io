@@ -44,7 +44,7 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	#container {
 		transform: translate(-50%, -50%);
 		top: 50%;
@@ -85,10 +85,10 @@ of the akisblack Software License, which can be found here: http://github.com/ak
 		margin-top: -10px;
 		font-size: 18px;
 		color: var(--white);
-	}
 
-	#pages > * {
-		display: inline-flex;
+		& > * {
+			display: inline-flex;
+		}
 	}
 
 	@media screen and (max-width: 750px) {
