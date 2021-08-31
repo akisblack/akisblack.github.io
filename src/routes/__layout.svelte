@@ -20,7 +20,7 @@
 </script>
 
 <slot />
-<Footer  class="footer"/>
+<Footer />
 
 <style>
 	@font-face {
