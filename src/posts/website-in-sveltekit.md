@@ -1,5 +1,5 @@
 ---
-permalink: website-in-sveltekit
+slug: website-in-sveltekit
 title: Writing my website in SvelteKit
 summary: How and with what tools I wrote my site.
 date: "2021-08-31"
