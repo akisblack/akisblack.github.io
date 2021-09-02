@@ -7,10 +7,7 @@
 	<link rel="icon" href="/img/favicon.png">
 
 	<!--Embed metas-->
-	<meta property="og:url" content="https://akisblack.github.io">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="akisblack's site">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#00e1ff">
 	<meta name="description" content="akisblack's site">
 	<meta name="author" content="akisblack">
 </svelte:head>

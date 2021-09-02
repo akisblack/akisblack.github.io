@@ -1,6 +1,5 @@
 <svelte:head>
 	<title>Home | akisblack</title>
-	<meta property="og:description" content="Home | akisblack">
 	<link rel="stylesheet" href="RemoveNav.css">
 </svelte:head>
 
@@ -8,8 +7,7 @@
 	let name = "akisblack";
 	let sub = "Greek kid exploring the interwebz";
 	import pfp from "$img/pfp.png";
-	import SocialLink from '$lib/SocialLink.svelte';
-	import socials from "$lib/SocialLink.json";
+	import socials from "$lib/Socials.json";
 </script>
 
 <div id="container">
@@ -21,11 +19,9 @@
 				<h1 class="title">{name}</h1>
 				<h2 class="sub">{sub}</h2>
 				<div id="social">
-					<SocialLink social={socials.Discord}/>
-					<SocialLink social={socials.Twitter}/>
-					<SocialLink social={socials.Email}/>
-					<SocialLink social={socials.GitHub}/>
-					<SocialLink social={socials.Matrix}/>
+				{#each socials as {url, img, title}}
+					<a href={url}><img src={img} alt={title}></a>
+				{/each}
 				</div>
 				<div id="pages">
 					<a href="bio"><i class="mdi mdi-help-circle-outline"></i> Bio</a>
@@ -74,6 +70,10 @@
 	ul {
 		line-height: 35px;
 		list-style: none;
+	}
+
+	#social > a {
+		padding-inline-end: 8px;
 	}
 
 	#pages {

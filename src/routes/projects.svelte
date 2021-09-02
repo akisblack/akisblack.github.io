@@ -1,6 +1,5 @@
 <svelte:head>
 	<title>Projects | akisblack</title>
-	<meta property="og:description" content="Projects | akisblack">
 </svelte:head>
 
 <script>

@@ -1,6 +1,5 @@
 <svelte:head>
 	<title>Blog/{Post.metadata.title} | akisblack</title>
-	<meta property="og:description" content="Blog/{Post.metadata.title} | akisblack">
 </svelte:head>
 
 <script context="module">
