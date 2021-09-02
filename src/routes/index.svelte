@@ -1,6 +1,7 @@
 <svelte:head>
 	<title>Home | akisblack</title>
 	<meta property="og:description" content="Home | akisblack">
+	<link rel="stylesheet" href="RemoveNav.css">
 </svelte:head>
 
 <script>
