@@ -19,7 +19,7 @@
 				<h1 class="title">{name}</h1>
 				<h2 class="sub">{sub}</h2>
 				<div id="social">
-				{#each socials as {url, img, title}}
+				{#each socials as {url, img, title} }
 					<a href={url}><img src={img} alt={title}></a>
 				{/each}
 				</div>
