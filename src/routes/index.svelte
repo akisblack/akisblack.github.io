@@ -6,7 +6,7 @@
 <script>
 	let name = "akisblack";
 	let sub = "Greek kid exploring the interwebz";
-	import pfp from "$lib/img/pfp.png";
+	import pfp from "$img/pfp.png";
 	import socials from "$lib/Socials.json";
 </script>
 
