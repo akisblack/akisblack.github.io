@@ -10,11 +10,5 @@
 		"icon": "clipboard-outline",
 		"description": "A copypasta generator centred around browsers.",
 		"url": "https://github.com/cantinadevs/browsercopypasta"
-	},
-	{
-		"name": "akisblack Software License (ASL)",
-		"icon": "bank-outline",
-		"description": "A license that I use for my current projects.",
-		"url": "https://github.com/akisblack/akisblack-software-license"
 	}
 ]
