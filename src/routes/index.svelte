@@ -1,6 +1,5 @@
 <svelte:head>
 	<title>Home | akisblack</title>
-	<link rel="stylesheet" href="RemoveNav.css">
 </svelte:head>
 
 <script>
@@ -20,7 +19,7 @@
 				<h2 class="sub">{sub}</h2>
 				<div id="social">
 				{#each socials as {url, img, title} }
-					<a href={url}><img src={img} alt={title}></a>
+					<a href={url}><img src={img} alt="My {title}"></a>
 				{/each}
 				</div>
 				<div id="pages">

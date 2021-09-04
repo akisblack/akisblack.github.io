@@ -1,13 +1,15 @@
 <footer>
-	<div id="nav">
 		<a href="/"><i class="mdi mdi-home-outline"></i> Home</a>
 		<a href="../bio"><i class="mdi mdi-help-circle-outline"></i> Bio</a>
 		<a href="../projects"><i class="mdi mdi-wrench-outline"></i> Projects</a>
 		<a href="../blog"><i class="mdi mdi-book-outline"></i> Blog</a>
 		<hr>
-	</div>
 	<p>Made with <a href="https://kit.svelte.dev">SvelteKit</a>and <span>&lt;3</span> by Akis.</p>
 </footer>
+
+<script>
+	export let answer;
+</script>
 
 <style lang="postcss">
 	footer {

@@ -2,26 +2,26 @@
 	{
 		"url": "https://discord.gg/Mc9RUxwPrF",
 		"img": "img/discord.svg",
-		"title": "My Discord Server"
+		"title": "Discord Server"
 	},
 	{
 		"url": "https://twitter.com/akisblack_",
 		"img": "img/twitter.svg",
-		"title": "My Twitter"
+		"title": "Twitter"
 	},
 	{
 		"url": "mailto:akisblack0@gmail.com",
 		"img": "img/mail.svg",
-		"title": "My Email"
+		"title": "Email"
 	},
 	{
 		"url": "https://github.com/akisblack",
 		"img": "img/github.svg",
-		"title": "My GitHub"
+		"title": "GitHub"
 	},
 	{
 		"url": "https://matrix.to/#/@akisblack_:matrix.org",
 		"img": "img/matrix.svg",
-		"title": "My Matrix"
+		"title": "Matrix"
 	}
 ]
