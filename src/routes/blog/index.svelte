@@ -1,9 +1,5 @@
-<svelte:head>
-	<title>Blog | akisblack</title>
-</svelte:head>
-
 <script context="module">
-	const posts = import.meta.glob('../../posts/*.md');
+	const posts = import.meta.glob("../../posts/*.md");
 	let body = [];
 	for (const path in posts) {
 		body.push(posts[path]().then(({ metadata }) => metadata));
@@ -34,16 +30,20 @@
 	articles.sort(sortByDate);
 </script>
 
+<svelte:head>
+	<title>Blog | akisblack</title>
+</svelte:head>
+
 <div id="pages-container">
 	<h1 class="pages-title">Blog</h1>
 	{#each articles as { slug, title, summary }}
-			<!-- we're using the non-standard `rel=prefetch` attribute to
+		<!-- we're using the non-standard `rel=prefetch` attribute to
 					tell Sapper to load the data for the page as soon as
 					the user hovers over the link or taps it, instead of
 					waiting for the 'click' event -->
-				<div class="pages-container">
-					<a rel="prefetch" href="blog/{slug}" class="project-name">{title}</a>
-					<h2 class="pages-desc">{summary}</h2>
-				</div>
-		{/each}
+		<div class="pages-container">
+			<a rel="prefetch" href="blog/{slug}" class="project-name">{title}</a>
+			<h2 class="pages-desc">{summary}</h2>
+		</div>
+	{/each}
 </div>

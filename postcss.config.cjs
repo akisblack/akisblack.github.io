@@ -11,10 +11,11 @@ const config = {
 
 		postcssNesting(),
 
-		!dev && cssnano({
-			preset: "default",
-		}),
-	],
+		!dev &&
+			cssnano({
+				preset: "default"
+			})
+	]
 };
 
 module.exports = config;
