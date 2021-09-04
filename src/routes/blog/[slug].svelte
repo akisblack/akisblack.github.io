@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>Blog/{Post.metadata.title} | akisblack</title>
-</svelte:head>
-
 <script context="module">
 	/**
 	 * @type {import('@sveltejs/kit').Load}
@@ -11,21 +7,26 @@
 			props: {
 				Post: await import(`../../posts/${page.params.slug}.md`)
 			}
-		}
+		};
 	}
 </script>
+
 <script>
 	export let Post;
 </script>
 
+<svelte:head>
+	<title>Blog/{Post.metadata.title} | akisblack</title>
+</svelte:head>
+
 <div id="container">
 	<h1>{Post.metadata.title}</h1>
 	<h2>{Post.metadata.date}, by {Post.metadata.author}</h2>
-	<hr>
+	<hr />
 
 	<div class="content">
-		<svelte:component this={ Post.default } />
-	</div>	
+		<svelte:component this={Post.default} />
+	</div>
 </div>
 
 <style lang="postcss">
@@ -70,7 +71,7 @@
 	h2 {
 		font-size: 14px;
 		color: #929292;
-	} 
+	}
 
 	#container {
 		padding: 0 10% 0 10%;
