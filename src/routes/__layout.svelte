@@ -89,7 +89,7 @@
 		}
 	}
 
-	.content {
-		margin-bottom: 100px;
+	.content, #pages-container {
+		margin-bottom: 150px;
 	}
 </style>

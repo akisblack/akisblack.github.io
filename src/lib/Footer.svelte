@@ -3,8 +3,8 @@
 	<a href="../bio"><i class="mdi mdi-help-circle-outline" /> Bio</a>
 	<a href="../projects"><i class="mdi mdi-wrench-outline" /> Projects</a>
 	<a href="../blog"><i class="mdi mdi-book-outline" /> Blog</a>
-	<hr />
-	<p>Made with <a href="https://kit.svelte.dev">SvelteKit</a>and <span>&lt;3</span> by Akis.</p>
+
+	<p>Made with <a href="https://kit.svelte.dev">SvelteKit</a>and <span>&lt;3</span> by Akis. Licensed under the MIT license - <a href="https://github.com/akisblack/akisblack.github.io">Source Code</a></p>
 </footer>
 
 <style lang="postcss">
@@ -20,14 +20,16 @@
 			padding-inline-end: 0.5em;
 		}
 	}
-	hr {
-		width: 2em;
-		margin-left: 0;
-	}
 
 	p {
-		color: #fff;
+		float: right;
+		color: var(--white);
 		margin: 0;
+
+		@media (max-width: 913px) {
+			float: left;
+			padding-top: 0.5em;
+		}
 	}
 
 	span {
