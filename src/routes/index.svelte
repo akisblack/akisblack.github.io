@@ -39,7 +39,7 @@
 
 <div id="container">
 	<div class="main">
-		<h1>PS C:\Users\black> <span class="cursor">|</span></h1>
+		<h1>PS C:/Users/akisblack> <span class="cursor">|</span></h1>
 		<p>
 			I am Akis. A dev from Greece interested in web development and modding of various software and
 			videogame consoles. I currently know HTML, CSS and are learning Svelte. JavaScript still isn't
