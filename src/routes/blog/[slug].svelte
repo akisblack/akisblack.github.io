@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog/{Post.metadata.title} | akisblack</title>
+	<title>{Post.metadata.title} | akisblack</title>
 </svelte:head>
 
 <div id="container">

@@ -39,18 +39,27 @@
 
 <div id="container">
 	<div class="main">
-		<h1>PS C:/Users/akisblack> <span class="cursor">|</span></h1>
+		<h1>akisblack@bindozz:~ # <span class="cursor">|</span></h1>
 		<p>
 			I am Akis. A dev from Greece interested in web development and modding of various software and
 			videogame consoles. I currently know HTML, CSS and are learning Svelte. JavaScript still isn't
 			something I have motivation to learn, but who cares.
 		</p>
+		<div id="socials">
+			{#each socials as { url, img, title }}
+				<a href={url}>
+					<div>
+						<img src={img} alt="My {title}" />
+					</div>
+				</a>
+			{/each}
+		</div>
 	</div>
 
 	<div class="item-wrapper">
 		<div id="projects">
 			<h1>Projects</h1>
-			<div class="inner-blog-div">
+			<div class="outer-item-div">
 				{#each projects as { url, icon, name, description }}
 					<div class="item-div">
 						<a href={url} class="item-name"><i class="mdi mdi-{icon}" /> {name}</a>
@@ -62,7 +71,7 @@
 
 		<div id="blog">
 			<h1>Blog</h1>
-			<div class="inner-blog-div">
+			<div class="outer-item-div">
 				{#each articles as { slug, title, summary }}
 					<div class="item-div">
 						<a rel="prefetch" href="blog/{slug}" class="item-name">{title}</a>
@@ -71,17 +80,6 @@
 				{/each}
 			</div>
 		</div>
-
-		<div id="socials">
-			<h1>Socials</h1>
-			{#each socials as { url, img, title }}
-				<a href={url}>
-					<div class="item-div">
-						<img src={img} alt="My {title}" />
-					</div>
-				</a>
-			{/each}
-		</div>
 	</div>
 </div>
 
@@ -89,13 +87,6 @@
 	#container {
 		margin: 0 auto;
 		width: 80%;
-	}
-
-	#socials {
-		margin-bottom: 80px;
-	}
-	.main {
-		vertical-align: middle;
 	}
 
 	h1 {
@@ -124,22 +115,25 @@
 		text-align: justify;
 	}
 
+	#socials > a {
+		display: inline-flex;
+		padding-inline-end: 1em;
+	}
+
+	.item-wrapper > * {
+		float: left;
+		padding-inline-end: 1em;
+	}
+
 	.item-div {
 		border: 2px solid #fff;
 		border-radius: 5px;
-		max-width: 18em;
+		width: 16em;
+		height: 7em;
 		padding: 1em;
 		margin-bottom: 1em;
 	}
 
-	#socials > a {
-		width: fit-content;
-		display: inline-flex;
-
-		&:not(:first-child) {
-			margin-left: 0.5em;
-		}
-	}
 	.item-name {
 		font-size: 22px;
 	}
@@ -149,20 +143,11 @@
 		color: var(--grey);
 	}
 
-	.item-wrapper > * {
-		float: left;
-		padding-right: 5em;
-
-		&:nth-child(3) {
-			padding-right: 0;
-
-			@media (max-width: 1049px) {
-				padding-right: 5em;
-			}
-		}
+	#blog {
+		margin-bottom: 80px;
 	}
 
-	.inner-blog-div {
+	.outer-item-div {
 		height: 22em;
 		overflow-x: hidden;
 		overflow-y: auto;

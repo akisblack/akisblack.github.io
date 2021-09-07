@@ -11,7 +11,7 @@
 		href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css"
 		rel="stylesheet"
 	/>
-	<link rel="icon" src="/img/favicon.png" />
+	<link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
 
 	<!--Embed metas-->
 	<meta name="theme-color" content="#39d687" />

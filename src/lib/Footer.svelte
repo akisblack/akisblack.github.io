@@ -12,7 +12,7 @@
 		width: 100%;
 		padding: 0.1em;
 		bottom: 0;
-		background-color: var(--bg-light);
+		background-color: var(--bg-normal);
 	}
 
 	p {
