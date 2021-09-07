@@ -44,6 +44,7 @@
 	"type": "module",
 	"dependencies": {
 		"html-minifier": "^4.0.0",
-		"postcss-nesting": "^8.0.1"
+		"postcss-nesting": "^8.0.1",
+		"svelte-tooltip": "^1.2.0"
 	}
 }

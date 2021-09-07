@@ -17,6 +17,7 @@
 <script>
 	import projects from "$lib/Projects.json";
 	import socials from "$lib/Socials.json";
+	import SvelteTooltip from 'svelte-tooltip';
 
 	export let articles;
 	function sortByDate(a, b) {
@@ -47,11 +48,11 @@
 		</p>
 		<div id="socials">
 			{#each socials as { url, img, title }}
+			<SvelteTooltip tip="My {title}" bottom color="var(--accent)">
 				<a href={url}>
-					<div>
 						<img src={img} alt="My {title}" />
-					</div>
 				</a>
+			</SvelteTooltip>
 			{/each}
 		</div>
 	</div>
@@ -115,9 +116,9 @@
 		text-align: justify;
 	}
 
-	#socials > a {
+	#socials a {
 		display: inline-flex;
-		padding-inline-end: 1em;
+		margin-right: 1em;
 	}
 
 	.item-wrapper > * {
