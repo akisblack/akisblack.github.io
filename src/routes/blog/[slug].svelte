@@ -20,6 +20,7 @@
 </svelte:head>
 
 <div id="container">
+	<a href="/" class="mdi mdi-home-outline" style="color: var(--accent);"> Home</a>
 	<h1>{Post.metadata.title}</h1>
 	<h2>{Post.metadata.date}, by {Post.metadata.author}</h2>
 	<hr />
@@ -65,7 +66,7 @@
 	}
 
 	* :global() {
-		color: var(--white);
+		color: #fff;
 	}
 
 	h2 {
