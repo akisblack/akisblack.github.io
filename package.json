@@ -1,7 +1,7 @@
 {
 	"name": "akis-site",
 	"description": "My site written in SvelteKit.",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"homepage": "https://akisblack.github.io",
 	"license": "MIT",
 	"repository": {
