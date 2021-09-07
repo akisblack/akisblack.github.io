@@ -92,7 +92,7 @@
 	}
 
 	#socials {
-		margin-bottom: 100px;
+		margin-bottom: 80px;
 	}
 	.main {
 		vertical-align: middle;
@@ -101,6 +101,7 @@
 	h1 {
 		color: #fff;
 		white-space: nowrap;
+		font-size: 24px;
 	}
 
 	.cursor {
