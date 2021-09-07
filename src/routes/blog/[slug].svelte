@@ -76,6 +76,7 @@
 
 	#container {
 		padding: 0 10% 0 10%;
+		margin-bottom: 80px;
 	}
 
 	hr {
