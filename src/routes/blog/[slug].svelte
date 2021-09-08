@@ -75,12 +75,12 @@
 	}
 
 	#container {
-		padding: 0 10% 0 10%;
 		margin-bottom: 80px;
 	}
 
+	.content :global(hr),
 	hr {
 		width: 30px;
-		margin: 0px;
+		margin: 0;
 	}
 </style>

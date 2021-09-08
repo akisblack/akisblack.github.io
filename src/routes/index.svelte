@@ -17,7 +17,7 @@
 <script>
 	import projects from "$lib/Projects.json";
 	import socials from "$lib/Socials.json";
-	import SvelteTooltip from 'svelte-tooltip';
+	import SvelteTooltip from "svelte-tooltip";
 
 	export let articles;
 	function sortByDate(a, b) {
@@ -40,19 +40,19 @@
 
 <div id="container">
 	<div class="main">
-		<h1>akisblack@bindozz:~ # <span class="cursor">|</span></h1>
+		<h1>akisblack@bindozz:~# <span class="cursor">▃</span></h1>
 		<p>
-			I am Akis. A dev from Greece interested in web development and modding of various software and
+			Hi, I am Akis, a web developer from Greece interested in modding of various software and
 			videogame consoles. I currently know HTML, CSS and are learning Svelte. JavaScript still isn't
 			something I have motivation to learn, but who cares.
 		</p>
 		<div id="socials">
 			{#each socials as { url, img, title }}
-			<SvelteTooltip tip="My {title}" bottom color="var(--accent)">
-				<a href={url}>
+				<SvelteTooltip tip="My {title}" bottom color="var(--accent)">
+					<a href={url}>
 						<img src={img} alt="My {title}" />
-				</a>
-			</SvelteTooltip>
+					</a>
+				</SvelteTooltip>
 			{/each}
 		</div>
 	</div>
@@ -86,14 +86,13 @@
 
 <style lang="postcss">
 	#container {
-		margin: 0 auto;
-		width: 80%;
+		width: fit-content;
 	}
 
 	h1 {
 		color: #fff;
 		white-space: nowrap;
-		font-size: 24px;
+		font-size: 36px;
 	}
 
 	.cursor {
@@ -111,19 +110,23 @@
 	}
 
 	p {
-		max-width: 80vh;
+		max-width: 35em;
 		color: var(--grey);
+		font-size: 16px;
 		text-align: justify;
 	}
 
 	#socials a {
 		display: inline-flex;
-		margin-right: 1em;
+		padding-inline-end: 1em;
 	}
 
 	.item-wrapper > * {
 		float: left;
-		padding-inline-end: 1em;
+
+		&:not(:last-child) {
+			margin-right: 2em;
+		}
 	}
 
 	.item-div {
@@ -142,6 +145,7 @@
 	.item-desc {
 		font-size: 16px;
 		color: var(--grey);
+		font-weight: 400;
 	}
 
 	#blog {
@@ -152,6 +156,5 @@
 		height: 22em;
 		overflow-x: hidden;
 		overflow-y: auto;
-		padding-right: 1em;
 	}
 </style>

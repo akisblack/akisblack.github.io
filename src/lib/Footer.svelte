@@ -16,8 +16,7 @@
 	}
 
 	p {
-		text-align: center;
-		color: #fff;
+		color: var(--grey);
 	}
 
 	span {
