@@ -37,7 +37,8 @@
 	body {
 		font-family: "Roboto Slab";
 		background-color: var(--bg-normal);
-		margin: 4em 1em 0 4em;
+		margin: 0;
+		padding-top: 2em;
 	}
 
 	a {
@@ -50,10 +51,6 @@
 	}
 
 	@media (max-width: 690px) {
-		body {
-			margin-left: 1em;
-		}
-
 		h1 {
 			font-size: 22px !important;
 		}

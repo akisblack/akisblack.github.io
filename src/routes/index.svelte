@@ -18,6 +18,7 @@
 	import projects from "$lib/Projects.json";
 	import socials from "$lib/Socials.json";
 	import SvelteTooltip from "svelte-tooltip";
+	import Facebook from '@icons-pack/svelte-simple-icons/src/components/Facebook.svelte';
 
 	export let articles;
 	function sortByDate(a, b) {
@@ -45,6 +46,7 @@
 			Hi, I am Akis, a web developer from Greece interested in modding of various software and
 			videogame consoles. I currently know HTML, CSS and are learning Svelte. JavaScript still isn't
 			something I have motivation to learn, but who cares.
+			<Facebook size={60} />
 		</p>
 		<div id="socials">
 			{#each socials as { url, img, title }}
@@ -87,6 +89,12 @@
 <style lang="postcss">
 	#container {
 		width: fit-content;
+		padding-left: 4em;
+		padding-right: 1em;
+
+		@media (max-width: 690px) {
+			padding-left: 1em;
+		}
 	}
 
 	h1 {
@@ -149,7 +157,7 @@
 	}
 
 	#blog {
-		margin-bottom: 80px;
+		margin-bottom: 100px;
 	}
 
 	.outer-item-div {

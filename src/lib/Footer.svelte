@@ -17,6 +17,12 @@
 
 	p {
 		color: var(--grey);
+		padding-left: 4em;
+		padding-right: 1em;
+
+		@media (max-width: 690px) {
+			padding-left: 1em;
+		}
 	}
 
 	span {
