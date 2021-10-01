@@ -37,7 +37,7 @@
 	body {
 		font-family: "Roboto Slab";
 		background-color: var(--bg-normal);
-		margin: 0;
+		margin: 0 0 800px 0;
 		padding-top: 2em;
 	}
 

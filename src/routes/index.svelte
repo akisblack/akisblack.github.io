@@ -40,7 +40,7 @@
 
 <div id="container">
 	<div class="main">
-		<h1>akisblack@bindozz:~# <span class="cursor">▃</span></h1>
+		<h1>[akisblack@bindozz]$ <span class="cursor">▃</span></h1>
 		<p>
 			Hi, I am Akis, a web developer from Greece interested in modding of various software and
 			videogame consoles. I currently know HTML, CSS and are learning Svelte. JavaScript still isn't
@@ -48,7 +48,7 @@
 		</p>
 		<div id="socials">
 			{#each socials as { url, img, title }}
-				<SvelteTooltip tip="My {title}" bottom color="var(--accent)">
+				<SvelteTooltip tip="My {title}" bottom color="var(--bg-light)">
 					<a href={url}>
 						<img src={img} alt="My {title}" />
 					</a>
@@ -61,16 +61,23 @@
 		<div id="projects">
 			<h1>Projects</h1>
 			<div class="outer-item-div">
-				{#each projects as { url, icon, name, description }}
+				{#each projects as { url, icon, name, description, meta: {lang, color} }}
 					<div class="item-div">
-						<a href={url} class="item-name"><i class="mdi mdi-{icon}" /> {name}</a>
+						<span class="item-name"><i class="mdi mdi-{icon}" /> {name}</span>
 						<h2 class="item-desc">{description}</h2>
+						<div class="lang-div" style="background-color: {color};"></div>
+						<h3 class="lang-span">{lang}</h3>
+						<div class="tooltip-wrapper">
+							<SvelteTooltip tip="Go to repository." top color="var(--bg-light)">
+								<a href={url}><img src="/img/github.svg" alt="Go to repository."></a>
+							</SvelteTooltip>
+						</div>
 					</div>
 				{/each}
 			</div>
 		</div>
 
-		<div id="blog">
+		<!--<div id="blog">
 			<h1>Blog</h1>
 			<div class="outer-item-div">
 				{#each articles as { slug, title, summary }}
@@ -80,7 +87,7 @@
 					</div>
 				{/each}
 			</div>
-		</div>
+		</div>-->
 	</div>
 </div>
 
@@ -122,9 +129,12 @@
 		text-align: justify;
 	}
 
-	#socials a {
-		display: inline-flex;
-		padding-inline-end: 1em;
+	#socials {
+		color: var(--grey);
+		& a {
+			display: inline-flex;
+			padding-inline-end: 1em;
+		}
 	}
 
 	.item-wrapper > * {
@@ -138,14 +148,18 @@
 	.item-div {
 		border: 2px solid #fff;
 		border-radius: 5px;
-		width: 16em;
-		height: 7em;
+		width: 30em;
+		height: auto;
 		padding: 1em;
 		margin-bottom: 1em;
+		@media (max-width: 690px) {
+			width: 15em;
+		}
 	}
 
 	.item-name {
 		font-size: 22px;
+		color: var(--accent);
 	}
 
 	.item-desc {
@@ -154,7 +168,30 @@
 		font-weight: 400;
 	}
 
-	#blog {
+	.lang-div {
+		height: 12px;
+		width: 12px;
+		border-radius: 50%;
+	}
+
+	h3 {
+		color: var(--grey);
+		font-weight: normal;
+		font-size: 16px;
+	}
+
+	.lang-div, .lang-span {
+		display: inline-block;
+		transform: translateY(15px);
+	}
+
+	.tooltip-wrapper {
+		color: var(--grey);
+		float: right;
+		transform: translateY(30px);
+	}
+
+	/*#blog {
 		margin-bottom: 100px;
 	}
 
@@ -162,5 +199,5 @@
 		height: 22em;
 		overflow-x: hidden;
 		overflow-y: auto;
-	}
+	}*/
 </style>
