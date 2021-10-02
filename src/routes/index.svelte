@@ -33,8 +33,10 @@
 			<div class="item-div">
 				<span class="item-name"><i class="mdi mdi-{icon}" /> {name}</span>
 				<h2 class="item-desc">{description}</h2>
-				<div class="lang-div" style="background-color: {color};"></div>
-				<h3 class="lang-span">{lang}</h3>
+				<div class="lang-container">
+					<div class="lang-div" style="background-color: {color};"></div>
+					<h3 class="lang-span">{lang}</h3>
+				</div>
 				<h3 class="mdi mdi-bank-outline license"> {license}</h3>
 				<div class="tooltip-wrapper">
 					<SvelteTooltip tip="Go to repository" top color="var(--bg-light)">
@@ -133,13 +135,22 @@
 		transform: translateY(15px);
 	}
 
-	.lang-span, .license {
+	.lang-container, .license {
 		width: 20%;
+		display: inline-block;
+		@media (max-width: 690px) {
+			width: auto;
+			display: block;
+			transform: translateY(15px);
+		}
 	}
 
 	.tooltip-wrapper {
 		color: var(--grey);
 		float: right;
 		transform: translateY(25px);
+		@media (max-width: 690px) {
+			transform: translateY(-25px);
+		}
 	}
 </style>
