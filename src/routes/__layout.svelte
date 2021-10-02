@@ -27,6 +27,12 @@
 		font-family: "Roboto Slab";
 		src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
 	}
+
+	@font-face {
+		font-family: "JetBrains Mono";
+		src: url(/fonts/JetBrainsMono[wght].ttf);
+	}
+
 	:root {
 		--bg-normal: #171717;
 		--bg-light: #272727;
@@ -35,9 +41,9 @@
 	}
 
 	body {
-		font-family: "Roboto Slab";
+		font-family: "JetBrains Mono";
 		background-color: var(--bg-normal);
-		margin: 0 0 800px 0;
+		margin: 0 0 200px 0;
 		padding-top: 2em;
 	}
 

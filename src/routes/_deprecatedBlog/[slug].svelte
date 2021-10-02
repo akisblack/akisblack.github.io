@@ -5,7 +5,7 @@
 	export async function load({ page }) {
 		return {
 			props: {
-				Post: await import(`../../posts/${page.params.slug}.md`)
+				Post: await import(`./posts/${page.params.slug}.md`)
 			}
 		};
 	}

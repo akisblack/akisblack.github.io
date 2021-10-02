@@ -1,37 +1,7 @@
-<script context="module">
-	const posts = import.meta.glob("../posts/*.md");
-	let body = [];
-	for (const path in posts) {
-		body.push(posts[path]().then(({ metadata }) => metadata));
-	}
-	export async function load() {
-		const articles = await Promise.all(body);
-		return {
-			props: {
-				articles
-			}
-		};
-	}
-</script>
-
 <script>
 	import projects from "$lib/Projects.json";
 	import socials from "$lib/Socials.json";
 	import SvelteTooltip from "svelte-tooltip";
-
-	export let articles;
-	function sortByDate(a, b) {
-		const dateA = a.date;
-		const dateB = b.date;
-		let comparison = 0;
-		if (dateA > dateB) {
-			comparison = 1;
-		} else if (dateA < dateB) {
-			comparison = -1;
-		}
-		return comparison * -1;
-	}
-	articles.sort(sortByDate);
 </script>
 
 <svelte:head>
@@ -57,37 +27,22 @@
 		</div>
 	</div>
 
-	<div class="item-wrapper">
-		<div id="projects">
-			<h1>Projects</h1>
-			<div class="outer-item-div">
-				{#each projects as { url, icon, name, description, meta: {lang, color} }}
-					<div class="item-div">
-						<span class="item-name"><i class="mdi mdi-{icon}" /> {name}</span>
-						<h2 class="item-desc">{description}</h2>
-						<div class="lang-div" style="background-color: {color};"></div>
-						<h3 class="lang-span">{lang}</h3>
-						<div class="tooltip-wrapper">
-							<SvelteTooltip tip="Go to repository." top color="var(--bg-light)">
-								<a href={url}><img src="/img/github.svg" alt="Go to repository."></a>
-							</SvelteTooltip>
-						</div>
-					</div>
-				{/each}
+	<div id="projects">
+		<h1>Projects</h1>
+		{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
+			<div class="item-div">
+				<span class="item-name"><i class="mdi mdi-{icon}" /> {name}</span>
+				<h2 class="item-desc">{description}</h2>
+				<div class="lang-div" style="background-color: {color};"></div>
+				<h3 class="lang-span">{lang}</h3>
+				<h3 class="mdi mdi-bank-outline license"> {license}</h3>
+				<div class="tooltip-wrapper">
+					<SvelteTooltip tip="Go to repository" top color="var(--bg-light)">
+						<a href={url}><img src="/img/github.svg" alt="Go to repository"></a>
+					</SvelteTooltip>
+				</div>
 			</div>
-		</div>
-
-		<!--<div id="blog">
-			<h1>Blog</h1>
-			<div class="outer-item-div">
-				{#each articles as { slug, title, summary }}
-					<div class="item-div">
-						<a rel="prefetch" href="blog/{slug}" class="item-name">{title}</a>
-						<h2 class="item-desc">{summary}</h2>
-					</div>
-				{/each}
-			</div>
-		</div>-->
+		{/each}
 	</div>
 </div>
 
@@ -110,6 +65,7 @@
 
 	.cursor {
 		animation: 1.5s cursor step-end infinite;
+		font-family: "Roboto Slab";
 	}
 
 	@keyframes cursor {
@@ -134,14 +90,6 @@
 		& a {
 			display: inline-flex;
 			padding-inline-end: 1em;
-		}
-	}
-
-	.item-wrapper > * {
-		float: left;
-
-		&:not(:last-child) {
-			margin-right: 2em;
 		}
 	}
 
@@ -180,24 +128,18 @@
 		font-size: 16px;
 	}
 
-	.lang-div, .lang-span {
+	.lang-div, .lang-span, .license {
 		display: inline-block;
 		transform: translateY(15px);
+	}
+
+	.lang-span, .license {
+		width: 20%;
 	}
 
 	.tooltip-wrapper {
 		color: var(--grey);
 		float: right;
-		transform: translateY(30px);
+		transform: translateY(25px);
 	}
-
-	/*#blog {
-		margin-bottom: 100px;
-	}
-
-	.outer-item-div {
-		height: 22em;
-		overflow-x: hidden;
-		overflow-y: auto;
-	}*/
 </style>

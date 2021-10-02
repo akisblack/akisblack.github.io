@@ -6,7 +6,8 @@
 		"url": "https://github.com/akisblack/akisblack.github.io",
 		"meta": {
 			"lang": "Svelte",
-			"color": "#FF3E00"
+			"color": "#FF3E00",
+			"license": "MIT"
 		}
 	},
 	{
@@ -16,7 +17,8 @@
 		"url": "https://github.com/cantinadevs/browsercopypasta",
 		"meta": {
 			"lang": "Svelte",
-			"color": "#FF3E00"
+			"color": "#FF3E00",
+			"license": "MIT"
 		}
 	},
 	{
@@ -26,7 +28,8 @@
 		"url": "https://github.com/akisblack/CSS-Snippets",
 		"meta": {
 			"lang": "CSS",
-			"color": "#1572B6"
+			"color": "#1572B6",
+			"license": "MIT"
 		}
 	}
 ]
