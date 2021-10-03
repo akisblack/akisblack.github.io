@@ -56,8 +56,9 @@
 		}
 	}
 
-	@media (max-width: 690px) {
-		h1 {
+	h1 {
+		color: #fff;
+		@media (max-width: 690px) {
 			font-size: 22px !important;
 		}
 	}
