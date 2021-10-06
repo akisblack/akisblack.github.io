@@ -1,25 +1,24 @@
 <script>
-	import SvelteTooltip from "svelte-tooltip";
 	import projects from "$lib/Projects.json";
 </script>
 
 <div id="projects">
 	<h1>Projects</h1>
 	{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
-		<div class="item-div">
+		<div class="item-container">
 			<a href={url} class="mdi mdi-{icon} item-name"> {name}</a>
 			<h2 class="item-desc">{description}</h2>
-			<div class="lang-container">
-				<span class="lang-div" style="background-color: {color};"></span>
-				<span class="lang-span">{lang}</span>
+			<div class="item-lang">
+				<span class="item-lang-color" style="background-color: {color};"></span>
+				<span class="item-lang-span">{lang}</span>
 			</div>
-			<h3 class="mdi mdi-bank-outline license"> {license}</h3>
+			<h3 class="mdi mdi-scale-balance item-license"> {license}</h3>
 		</div>
 	{/each}
 </div>
 
 <style lang="postcss">
-	.item-div {
+	.item-container {
 		border-top: 1px solid #fff;
 		width: 30em;
 		padding: 1em;
@@ -44,13 +43,13 @@
 		font-weight: 400;
 	}
 
-	.lang-div {
+	.item-lang-color {
 		height: 12px;
 		width: 12px;
 		border-radius: 50%;
 	}
 
-	.lang-span {
+	.item-lang-span {
 		color: var(--grey);
 	}
 
@@ -60,12 +59,12 @@
 		font-size: 16px;
 	}
 
-	.lang-div, .lang-span, .license {
+	.item-lang-color, .item-lang-span, .license {
 		display: inline-block;
 	}
 
-	.lang-container, .license {
-		width: 33%;
+	.item-lang, .item-license {
 		display: inline-block;
+		margin-right: 16px;
 	}
 </style>

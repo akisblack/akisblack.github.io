@@ -19,11 +19,11 @@
 		<div id="socials">
 			<h1>Socials</h1>
 			{#each socials as { url, img, title }}
-				<SvelteTooltip tip={title} bottom color="var(--bg-light)">
-					<a href={url}>
+				<a href={url}>
+					<SvelteTooltip tip={title} bottom color="var(--bg-light)">
 						<img src={img} alt={title} />
-					</a>
-				</SvelteTooltip>
+					</SvelteTooltip>
+				</a>
 			{/each}
 		</div>
 	</div>
@@ -33,19 +33,15 @@
 <style lang="postcss">
 	#container {
 		padding-left: 4em;
-		padding-right: 1em;
 		@media (max-width: 690px) {
-			padding-left: 1em;
+			padding-left: 1.5em;
+			padding-right: 1.5em;
 		}
-	}
-
-	h1 {
-		white-space: nowrap;
 	}
 
 	.cursor {
 		animation: 1.5s cursor step-end infinite;
-		font-family: "Roboto Slab";
+		font-family: sans-serif;
 	}
 
 	@keyframes cursor {
@@ -65,11 +61,9 @@
 		text-align: justify;
 	}
 
-	#socials {
+	#socials a {
+		display: inline-flex;
+		margin-right: 1em;
 		color: var(--grey);
-		& a {
-			display: inline-flex;
-			padding-inline-end: 1em;
-		}
 	}
 </style>
