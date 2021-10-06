@@ -43,17 +43,13 @@
 	body {
 		font-family: "JetBrains Mono";
 		background-color: var(--bg-normal);
-		margin: 0 0 200px 0;
+		margin: 0 0 150px 0;
 		padding-top: 2em;
 	}
 
 	a {
 		color: var(--accent);
-		text-decoration: none;
-
-		&:hover {
-			color: #fff;
-		}
+		text-decoration: underline;
 	}
 
 	h1 {
