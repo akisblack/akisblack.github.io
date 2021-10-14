@@ -22,12 +22,7 @@
 <slot />
 <Footer />
 
-<style lang="postcss" global>
-	@font-face {
-		font-family: "Roboto Slab";
-		src: url(/fonts/RobotoSlab-VariableFont_wght.ttf);
-	}
-
+<style lang="scss" global>
 	@font-face {
 		font-family: "JetBrains Mono";
 		src: url(/fonts/JetBrainsMono[wght].ttf);

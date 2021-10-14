@@ -5,7 +5,7 @@
 <div id="projects">
 	<h1>Projects</h1>
 	{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
-		<div class="item-container">
+		<div class="item">
 			<a href={url} class="mdi mdi-{icon} item-name"> {name}</a>
 			<h2 class="item-desc">{description}</h2>
 			<div class="item-lang">
@@ -17,40 +17,43 @@
 	{/each}
 </div>
 
-<style lang="postcss">
-	.item-container {
+<style lang="scss">
+	.item {
 		border-top: 1px solid #fff;
 		width: 30em;
 		padding: 1em;
+
 		&:last-child {
 			border-bottom: 1px solid #fff;
 		}
+		
 		@media (max-width: 690px) {
 			width: auto;
 		}
-	}
 
-	.item-name {
-		font-size: 22px;
-		color: var(--accent);
-		text-decoration: none;
-	}
+		&-name {
+			font-size: 22px;
+			color: var(--accent);
+			text-decoration: none;
+		}
 
+		&-desc {
+			font-size: 16px;
+			color: var(--grey);
+			font-weight: 400;
+		}
 
-	.item-desc {
-		font-size: 16px;
-		color: var(--grey);
-		font-weight: 400;
-	}
+		&-lang {
+			&-color {
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+			}
 
-	.item-lang-color {
-		height: 12px;
-		width: 12px;
-		border-radius: 50%;
-	}
-
-	.item-lang-span {
-		color: var(--grey);
+			&-span {
+				color: var(--grey);
+			}
+		}
 	}
 
 	h3 {

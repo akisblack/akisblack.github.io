@@ -30,7 +30,7 @@
 	<Projects />
 </div>
 
-<style lang="postcss">
+<style lang="scss">
 	#container {
 		padding-left: 4em;
 		@media (max-width: 690px) {

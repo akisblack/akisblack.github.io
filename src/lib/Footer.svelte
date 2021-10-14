@@ -3,10 +3,12 @@
 		Made with <a href="https://kit.svelte.dev">SvelteKit</a> and <span>&lt;3</span> by Akis.
 		Licensed under the MIT license -
 		<a href="https://github.com/akisblack/akisblack.github.io">Source Code</a>
+		-
+		<a href="/about">About</a>
 	</p>
 </footer>
 
-<style lang="postcss">
+<style lang="scss">
 	footer {
 		position: fixed;
 		width: 100%;
