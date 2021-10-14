@@ -3,7 +3,7 @@
 	<h1>About this website</h1>
 
 	## Tech stack::
-	Framework: Svelte  
+	Framework: SvelteKit
 	Additional technologies:
 	- SCSS
 	- PostCSS
