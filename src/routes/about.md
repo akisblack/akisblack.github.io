@@ -41,7 +41,7 @@
 	
 </div>
 
-<style lang="scss">
+<style lang="postcss">
 	#container {
 		padding-left: 4em;
 		@media (max-width: 690px) {
