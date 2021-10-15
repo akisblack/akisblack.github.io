@@ -17,7 +17,7 @@
 	{/each}
 </div>
 
-<style lang="scss">
+<style lang="postcss">
 	.item {
 		border-top: 1px solid #fff;
 		width: 30em;

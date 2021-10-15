@@ -8,7 +8,7 @@
 	</p>
 </footer>
 
-<style lang="scss">
+<style lang="postcss">
 	footer {
 		position: fixed;
 		width: 100%;

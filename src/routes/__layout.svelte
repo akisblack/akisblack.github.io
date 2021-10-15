@@ -22,7 +22,7 @@
 <slot />
 <Footer />
 
-<style lang="scss" global>
+<style lang="postcss" global>
 	@font-face {
 		font-family: "JetBrains Mono";
 		src: url(/fonts/JetBrainsMono[wght].ttf);

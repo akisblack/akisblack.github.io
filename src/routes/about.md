@@ -5,7 +5,6 @@
 	## Tech stack::
 	Framework: SvelteKit
 	Additional technologies:
-	- SCSS
 	- PostCSS
 	- MDsveX
 	- PNPM

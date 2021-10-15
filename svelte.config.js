@@ -27,9 +27,7 @@ const config = {
 	preprocess: [
 		mdsvex(mdsvexConfig),
 		preprocess({
-			postcss: true,
-
-			scss: true
+			postcss: true
 		})
 	]
 };
