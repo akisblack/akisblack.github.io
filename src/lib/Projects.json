@@ -22,6 +22,17 @@
 		}
 	},
 	{
+		"name": "Svelte Blog",
+		"icon": "newspaper",
+		"description": "A blog template made in SvelteKit.",
+		"url": "https://github.com/akisblack/svelte-blog",
+		"meta": {
+			"lang": "Svelte",
+			"color": "#FF3E00",
+			"license": "Unlicense"
+		}
+	},
+	{
 		"name": "CSS Snippets",
 		"icon": "content-cut",
 		"description": "A collection of CSS snippets for https://powercord.dev.",

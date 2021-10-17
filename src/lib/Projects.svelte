@@ -6,7 +6,7 @@
 	<h1>Projects</h1>
 	{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
 		<div class="item">
-			<a href={url} class="mdi mdi-{icon} item-name"> {name}</a>
+			<a href={url} class="mdi mdi-{icon} item-name">{name}</a>
 			<h2 class="item-desc">{description}</h2>
 			<div class="item-lang">
 				<span class="item-lang-color" style="background-color: {color};"></span>
@@ -35,6 +35,13 @@
 			font-size: 22px;
 			color: var(--accent);
 			text-decoration: none;
+			
+			&:hover {
+				text-decoration: underline;
+			}
+			&::before {
+				margin-right: 4px;
+			}
 		}
 
 		&-desc {

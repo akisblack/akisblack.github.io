@@ -20,7 +20,7 @@
 			<h1>Socials</h1>
 			{#each socials as { url, img, title }}
 				<a href={url}>
-					<SvelteTooltip tip={title} bottom color="var(--bg-light)">
+					<SvelteTooltip tip={title} top color="var(--bg-light)">
 						<img src={img} alt={title} />
 					</SvelteTooltip>
 				</a>
