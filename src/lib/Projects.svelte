@@ -2,34 +2,37 @@
 	import projects from "$lib/Projects.json";
 </script>
 
-<div id="projects">
+<div class="projects">
 	<h1>Projects</h1>
-	{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
-		<div class="item">
-			<a href={url} class="mdi mdi-{icon} item-name">{name}</a>
-			<h2 class="item-desc">{description}</h2>
-			<div class="item-lang">
-				<span class="item-lang-color" style="background-color: {color};"></span>
-				<span class="item-lang-span">{lang}</span>
+	<div class="item-container">
+		{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
+			<div class="item">
+				<a href={url} class="mdi mdi-{icon} item-name">{name}</a>
+				<h2 class="item-desc">{description}</h2>
+				<div class="item-metadata">
+					<div class="item-metadata-lang">
+						<span class="item-metadata-lang-color" style="background-color: {color};"></span>
+						<span class="item-metadata-lang-span">{lang}</span>
+					</div>
+					<h3 class="mdi mdi-scale-balance item-metadata-license">{license}</h3>
+				</div>
 			</div>
-			<h3 class="mdi mdi-scale-balance item-license"> {license}</h3>
-		</div>
-	{/each}
+		{/each}
+	</div>
 </div>
 
 <style lang="postcss">
 	.item {
-		border-top: 1px solid #fff;
-		width: 30em;
-		padding: 1em;
-
-		&:last-child {
-			border-bottom: 1px solid #fff;
-		}
-		
-		@media (max-width: 690px) {
-			width: auto;
-		}
+		size: 20em auto;
+		padding: 1.5em;
+		background-color: var(--bg-light);
+		margin: 10px;
+		border-radius: 8px;
+		box-shadow: 0 4px 4px rgba(0,0,0,0.16);
+		box-sizing: border-box;
+		margin-left: 0;
+		display: flex;
+    	flex-direction: column;
 
 		&-name {
 			font-size: 22px;
@@ -44,37 +47,50 @@
 			}
 		}
 
+
 		&-desc {
 			font-size: 16px;
 			color: var(--grey);
 			font-weight: 400;
+			display: flex;
+			flex: 1;
 		}
 
-		&-lang {
-			&-color {
-				height: 12px;
-				width: 12px;
-				border-radius: 50%;
+		&-metadata {
+			border-top: 1px solid var(--dark-grey);
+			&-license {
+				display: inline-block;
+				&::before {
+					margin-right: 4px;
+				}
 			}
 
-			&-span {
-				color: var(--grey);
+			&-lang {
+				display: inline-block;
+				margin-right: 16px;
+				&-color {
+					display: inline-block;
+					height: 12px;
+					width: 12px;
+					border-radius: 50%;
+				}
+
+				&-span {
+					color: var(--grey);
+				}
 			}
 		}
+	}
+
+	.item-container {
+		max-width: 50em;
+		display: flex;
+		flex-flow: row wrap;
 	}
 
 	h3 {
 		color: var(--grey);
 		font-weight: normal;
 		font-size: 16px;
-	}
-
-	.item-lang-color, .item-lang-span, .license {
-		display: inline-block;
-	}
-
-	.item-lang, .item-license {
-		display: inline-block;
-		margin-right: 16px;
 	}
 </style>

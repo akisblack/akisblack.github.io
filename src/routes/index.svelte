@@ -8,7 +8,7 @@
 	<title>akisblack</title>
 </svelte:head>
 
-<div id="container">
+<div class="container">
 	<div class="main">
 		<h1>[akisblack@bindozz]$ <span class="cursor">▃</span></h1>
 		<p>
@@ -16,7 +16,7 @@
 			videogame consoles. I currently know HTML, CSS and are learning Svelte. JavaScript still isn't
 			something I have motivation to learn, but who cares.
 		</p>
-		<div id="socials">
+		<div class="socials">
 			<h1>Socials</h1>
 			{#each socials as { url, img, title }}
 				<a href={url}>
@@ -31,7 +31,7 @@
 </div>
 
 <style lang="postcss">
-	#container {
+	.container {
 		padding-left: 4em;
 		@media (max-width: 690px) {
 			padding-left: 1.5em;
@@ -61,7 +61,7 @@
 		text-align: justify;
 	}
 
-	#socials a {
+	.socials a {
 		display: inline-flex;
 		margin-right: 1em;
 		color: var(--grey);

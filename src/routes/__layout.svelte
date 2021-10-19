@@ -33,6 +33,7 @@
 		--bg-light: #272727;
 		--accent: #39d687;
 		--grey: #ddd;
+		--dark-grey: #aeaeae;
 	}
 
 	body {

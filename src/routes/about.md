@@ -1,4 +1,4 @@
-<div id="container">
+<div class="container">
 	<a href="/" class="mdi mdi-arrow-left">Back</a>
 	<h1>About this website</h1>
 
@@ -42,7 +42,7 @@
 </div>
 
 <style lang="postcss">
-	#container {
+	.container {
 		padding-left: 4em;
 		@media (max-width: 690px) {
 			padding-left: 1.5em;
