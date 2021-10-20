@@ -5,13 +5,13 @@
 <div class="projects">
 	<h1>Projects</h1>
 	<div class="item-container">
-		{#each projects as { url, icon, name, description, meta: {lang, color, license} }}
+		{#each projects as { url, icon, name, description, meta: { lang, color, license } }}
 			<div class="item">
 				<a href={url} class="mdi mdi-{icon} item-name">{name}</a>
 				<h2 class="item-desc">{description}</h2>
 				<div class="item-metadata">
 					<div class="item-metadata-lang">
-						<span class="item-metadata-lang-color" style="background-color: {color};"></span>
+						<span class="item-metadata-lang-color" style="background-color: {color};" />
 						<span class="item-metadata-lang-span">{lang}</span>
 					</div>
 					<h3 class="mdi mdi-scale-balance item-metadata-license">{license}</h3>
@@ -28,15 +28,15 @@
 		background-color: var(--bg-light);
 		margin: 10px 20px 10px 0;
 		border-radius: 8px;
-		box-shadow: 0 4px 4px rgba(0,0,0,0.16);
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
 		display: flex;
-    	flex-direction: column;
+		flex-direction: column;
 
 		&-name {
 			font-size: 22px;
 			color: var(--accent);
 			text-decoration: none;
-			
+
 			&:hover {
 				text-decoration: underline;
 			}
@@ -44,7 +44,6 @@
 				margin-right: 4px;
 			}
 		}
-
 
 		&-desc {
 			font-size: 16px;
@@ -54,7 +53,7 @@
 		}
 
 		&-metadata {
-			margin-top: .5em;
+			margin-top: 0.5em;
 			border-top: 1px solid var(--dark-grey);
 			&-license {
 				display: inline-block;
