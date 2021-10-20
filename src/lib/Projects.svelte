@@ -26,11 +26,9 @@
 		size: 20em auto;
 		padding: 1.5em;
 		background-color: var(--bg-light);
-		margin: 10px;
+		margin: 10px 20px 10px 0;
 		border-radius: 8px;
 		box-shadow: 0 4px 4px rgba(0,0,0,0.16);
-		box-sizing: border-box;
-		margin-left: 0;
 		display: flex;
     	flex-direction: column;
 
@@ -52,11 +50,11 @@
 			font-size: 16px;
 			color: var(--grey);
 			font-weight: 400;
-			display: flex;
 			flex: 1;
 		}
 
 		&-metadata {
+			margin-top: .5em;
 			border-top: 1px solid var(--dark-grey);
 			&-license {
 				display: inline-block;
