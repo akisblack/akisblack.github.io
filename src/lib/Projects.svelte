@@ -9,6 +9,7 @@
 			<div class="item">
 				<a href={url} class="mdi mdi-{icon} item-name">{name}</a>
 				<h2 class="item-desc">{description}</h2>
+				<hr />
 				<div class="item-metadata">
 					<div class="item-metadata-lang">
 						<span class="item-metadata-lang-color" style="background-color: {color};" />
@@ -35,11 +36,7 @@
 		&-name {
 			font-size: 22px;
 			color: var(--accent);
-			text-decoration: none;
-
-			&:hover {
-				text-decoration: underline;
-			}
+			text-decoration: underline;
 			&::before {
 				margin-right: 4px;
 			}
@@ -54,14 +51,12 @@
 
 		&-metadata {
 			margin-top: 0.5em;
-			border-top: 1px solid var(--dark-grey);
 			&-license {
-				display: inline-block;
+				display: inline;
 				&::before {
 					margin-right: 4px;
 				}
 			}
-
 			&-lang {
 				display: inline-block;
 				margin-right: 16px;
@@ -89,5 +84,12 @@
 		color: var(--grey);
 		font-weight: normal;
 		font-size: 16px;
+	}
+
+	hr {
+		size: 100% 1px;
+		background-color: var(--dark-grey);
+		border-radius: 8px;
+		border: 0;
 	}
 </style>
