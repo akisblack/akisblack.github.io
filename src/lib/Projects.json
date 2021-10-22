@@ -14,7 +14,7 @@
 		"name": "Browser Copypasta",
 		"icon": "clipboard-outline",
 		"description": "A copypasta generator centred around browsers.",
-		"url": "https://github.com/cantinadevs/browsercopypasta",
+		"url": "https://github.com/akisblack/browser-copypasta",
 		"meta": {
 			"lang": "Svelte",
 			"color": "#FF3E00",
