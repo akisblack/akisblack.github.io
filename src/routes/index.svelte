@@ -31,14 +31,6 @@
 </div>
 
 <style lang="postcss">
-	.container {
-		padding-left: 4em;
-		@media (max-width: 690px) {
-			padding-left: 1.5em;
-			padding-right: 1.5em;
-		}
-	}
-
 	.cursor {
 		animation: 1.5s cursor step-end infinite;
 		font-family: sans-serif;

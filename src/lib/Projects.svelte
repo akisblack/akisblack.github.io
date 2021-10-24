@@ -35,8 +35,6 @@
 
 		&-name {
 			font-size: 22px;
-			color: var(--accent);
-			text-decoration: underline;
 			&::before {
 				margin-right: 4px;
 			}

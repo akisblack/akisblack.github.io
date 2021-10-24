@@ -41,11 +41,16 @@
 		background-color: var(--bg-normal);
 		margin: 0 0 150px 0;
 		padding-top: 2em;
+		padding-left: 4em;
+		@media (max-width: 690px) {
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+		}
 	}
 
 	a {
 		color: var(--accent);
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	h1 {

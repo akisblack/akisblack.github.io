@@ -42,14 +42,6 @@ SOFTWARE.
 </div>
 
 <style lang="postcss">
-	.container {
-		padding-left: 4em;
-		@media (max-width: 690px) {
-			padding-left: 1.5em;
-			padding-right: 1.5em;
-		}
-	}
-
 	h2 {
 		font-size: 1.4em;
 		font-weight: 500;
