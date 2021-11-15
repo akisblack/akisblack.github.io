@@ -2,6 +2,7 @@
 	import socials from "$lib/Socials.json";
 	import SvelteTooltip from "svelte-tooltip";
 	import Projects from "$lib/Projects.svelte";
+	import Icon from "@iconify/svelte";
 </script>
 
 <svelte:head>
@@ -18,10 +19,10 @@
 		</p>
 		<div class="socials">
 			<h1>Socials</h1>
-			{#each socials as { url, img, title }}
+			{#each socials as { url, img, title, color }}
 				<a href={url}>
 					<SvelteTooltip tip={title} top color="var(--bg-light)">
-						<img src={img} alt={title} />
+						<Icon icon="{img}" inline={true} color="{color}" height={28} />
 					</SvelteTooltip>
 				</a>
 			{/each}

@@ -6,13 +6,15 @@
 		const response = await fetch(url)
 		repos = await response.json();
 	}
+
+	import Icon from "@iconify/svelte";
 </script>
 
 
 <div class="repos" on:show={fetchRepos()}>
 	<h1>All Repos</h1>
 	<div class="item-container">
-		{#each repos as { html_url, name, description, language, license, fork, updated_at } }
+		{#each repos as { html_url, name, description, language, license, fork } }
 			<div class="item">
 				<div class="item-first-div">
 					<a href={html_url} class="item-name">{name}</a>
@@ -25,11 +27,11 @@
 				{/if}
 				<div class="item-metadata">
 					{#if language}
-						<span class="mdi mdi-bookmark-outline item-metadata-lang">{language}</span>
+						<span class="item-metadata-lang"><Icon icon="feather:bookmark" inline={true} /> {language}</span>
 					{/if}
 					
 					{#if license}
-						<a class="mdi mdi-scale-balance item-metadata-license" href="https://choosealicense.com/licenses/{license?.key}">{license?.spdx_id}</a>
+						<a class="item-metadata-license" href="https://choosealicense.com/licenses/{license?.key}"><Icon icon="lucide:scale" inline={true} /> {license?.spdx_id}</a>
 					{/if}
 
 					{#if fork}

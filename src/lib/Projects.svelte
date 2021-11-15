@@ -1,5 +1,6 @@
 <script>
 	import projects from "$lib/Projects.json";
+	import Icon from "@iconify/svelte";
 </script>
 
 <div class="projects">
@@ -7,7 +8,7 @@
 	<div class="item-container">
 		{#each projects as { url, icon, name, description, meta: { lang, color, license } }}
 			<div class="item">
-				<a href={url} class="mdi mdi-{icon} item-name">{name}</a>
+				<a href={url} class="item-name"><Icon icon="{icon}" inline={true} /> {name}</a>
 				<h2 class="item-desc">{description}</h2>
 				<hr />
 				<div class="item-metadata">
@@ -15,7 +16,7 @@
 						<span class="item-metadata-lang-color" style="background-color: {color};" />
 						<span class="item-metadata-lang-span">{lang}</span>
 					</div>
-					<h3 class="mdi mdi-scale-balance item-metadata-license">{license}</h3>
+					<h3 class="item-metadata-license"><Icon icon="lucide:scale" inline={true} /> {license}</h3>
 				</div>
 			</div>
 		{/each}

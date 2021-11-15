@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Website",
-		"icon": "web",
+		"icon": "feather:globe",
 		"description": "My site written in SvelteKit.",
 		"url": "https://github.com/akisblack/akisblack.github.io",
 		"meta": {
@@ -12,7 +12,7 @@
 	},
 	{
 		"name": "Browser Copypasta",
-		"icon": "clipboard-outline",
+		"icon": "feather:clipboard",
 		"description": "A copypasta generator centred around browsers.",
 		"url": "https://github.com/akisblack/browser-copypasta",
 		"meta": {
@@ -23,7 +23,7 @@
 	},
 	{
 		"name": "Svelte Blog",
-		"icon": "newspaper",
+		"icon": "ic:round-newspaper",
 		"description": "A blog template made in SvelteKit.",
 		"url": "https://github.com/akisblack/svelte-blog",
 		"meta": {
@@ -34,7 +34,7 @@
 	},
 	{
 		"name": "CSS Snippets",
-		"icon": "content-cut",
+		"icon": "feather:scissors",
 		"description": "A collection of CSS snippets for https://powercord.dev.",
 		"url": "https://github.com/akisblack/CSS-Snippets",
 		"meta": {
