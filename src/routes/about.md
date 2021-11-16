@@ -1,5 +1,9 @@
+<script>
+	import Icon from "@iconify/svelte";
+</script>
+
 <div class="container">
-<a href="/" class="mdi mdi-arrow-left">Back</a>
+<a href="/"><Icon icon="feather:arrow-left" inline={true} height={16} /> Back</a>
 <h1>About this website</h1>
 
 ## Tech stack::

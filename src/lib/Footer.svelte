@@ -1,10 +1,14 @@
+<script>
+	import Icon from "@iconify/svelte";
+</script>
+
 <footer>
 	<p>
 		Made with <a href="https://kit.svelte.dev">SvelteKit</a> and <span>&lt;3</span> by Akis.
 		Licensed under the MIT license -
-		<a href="https://github.com/akisblack/akisblack.github.io">Source Code</a>
+		<a href="https://github.com/akisblack/akisblack.github.io"><Icon icon="feather:code" inline={true} height={16} /> Source Code</a>
 		-
-		<a href="/about">About</a>
+		<a href="/about"><Icon icon="eva:question-mark-circle-outline" inline={true} height={16} /> About</a>
 	</p>
 </footer>
 
