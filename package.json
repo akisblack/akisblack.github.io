@@ -41,7 +41,7 @@
 		"postcss-nested": "^5.0.6",
 		"postcss-scss": "^4.0.2",
 		"postcss-short": "^5.0.0",
-		"prettier": "~2.4.1",
+		"prettier": "~2.5.0",
 		"prettier-plugin-svelte": "^2.5.0",
 		"svelte": "^3.44.1",
 		"svelte-preprocess": "^4.9.8",
