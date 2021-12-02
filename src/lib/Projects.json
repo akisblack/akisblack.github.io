@@ -42,5 +42,16 @@
 			"color": "#1572B6",
 			"license": "MIT"
 		}
+	},
+	{
+		"name": "Svelte Personal Site Template",
+		"icon": "gg:website",
+		"description": "A personal website template built with SvelteKit. It includes a blog, a project list and a contact page. ",
+		"url": "https://github.com/akisblack/svelte-personal-site-template",
+		"meta": {
+			"lang": "Svelte",
+			"color": "#FF3E00",
+			"license": "Unlicense"
+		}
 	}
 ]
