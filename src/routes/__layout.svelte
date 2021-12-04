@@ -1,58 +1,34 @@
 <script>
+	import { MetaTags } from "svelte-meta-tags";
 	import Footer from "$lib/Footer.svelte";
+	import "../app.css";
 </script>
 
-<svelte:head>
-	<!--Imports and viewport stuff-->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="shortcut icon" type="image/jpg" href="/img/favicon.png" />
-
-	<!--Embed metas-->
-	<meta name="theme-color" content="#39d687" />
-	<meta name="description" content="akisblack's site" />
-	<meta name="author" content="akisblack" />
-</svelte:head>
+<MetaTags
+	title="akisblack"
+	description="My website."
+	canonical="https://akisblack.tech/"
+	openGraph={{
+		url: "https://akisblack.tech/",
+		title: "akisblack",
+		description: "My website.",
+		images: [
+			{
+				url: "https://akisblack.tech/img/logo.png",
+				width: 512,
+				height: 512,
+				alt: "My logo"
+			}
+		],
+		site_name: "SiteName"
+	}}
+	twitter={{
+		handle: "@akisblack_",
+		site: "@akisblack.tech",
+		cardType: "summary_large_image"
+	}}
+/>
 
 <slot />
+
 <Footer />
-
-<style lang="postcss" global>
-	@font-face {
-		font-family: "JetBrains Mono";
-		src: url(/fonts/JetBrainsMono[wght].ttf);
-	}
-
-	:root {
-		--bg-normal: #171717;
-		--bg-light: #272727;
-		--accent: #39d687;
-		--grey: #ddd;
-		--dark-grey: #aeaeae;
-	}
-
-	body {
-		font-family: "JetBrains Mono";
-		background-color: var(--bg-normal);
-		margin: 0 0 150px 0;
-		padding-top: 2em;
-		padding-left: 4em;
-		@media (max-width: 690px) {
-			padding-left: 1.5em;
-			padding-right: 1.5em;
-		}
-	}
-
-	a {
-		color: var(--accent);
-		text-decoration: none;
-	}
-
-	h1 {
-		color: #fff;
-		@media (max-width: 690px) {
-			font-size: 22px !important;
-		}
-	}
-</style>

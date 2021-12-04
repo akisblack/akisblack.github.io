@@ -1,0 +1,29 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: Outfit;
+	src: url(/fonts/Outfit.ttf);
+}
+
+body {
+	@apply bg-bg-primary font-primary;
+}
+
+.container {
+	@apply m-auto max-w-[80%] mb-52 p-4;
+}
+
+h1 {
+	@apply font-bold text-4xl;
+}
+
+.default-tip {
+	@apply mb-5;
+}
+
+a {
+	@apply text-accent-secondary;
+}

@@ -1,31 +1,17 @@
 <script>
+	import socials from "$lib/Socials.json";
 	import Icon from "@iconify/svelte";
+	import SvelteTooltip from "svelte-tooltip";
 </script>
 
-<footer>
-	<p>
-		Made with <a href="https://kit.svelte.dev">SvelteKit</a> and <span>&lt;3</span> by Akis.
-		Licensed under the MIT license -
-		<a href="https://github.com/akisblack/akisblack.github.io"><Icon icon="feather:code" inline={true} height={16} /> Source Code</a>
-		-
-		<a href="/about"><Icon icon="eva:question-mark-circle-outline" inline={true} height={16} /> About</a>
-	</p>
+<footer class="bg-bg-alt fixed w-full p-4 bottom-0 text-lg">
+	<div class="socials flex flex-row items-center justify-center">
+		{#each socials as { url, img, title, color }}
+			<a href={url} class="ml-4 text-greyish bg-bg-primary p-3 pb-2 rounded">
+				<SvelteTooltip tip={title} top color="#111111">
+					<Icon icon={img} {color} height={22} />
+				</SvelteTooltip>
+			</a>
+		{/each}
+	</div>
 </footer>
-
-<style lang="postcss">
-	footer {
-		position: fixed;
-		width: 100%;
-		padding: 0.1em;
-		bottom: 0;
-		background-color: var(--bg-normal);
-	}
-
-	p {
-		color: var(--grey);
-	}
-
-	span {
-		color: #ff5650;
-	}
-</style>

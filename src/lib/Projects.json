@@ -12,7 +12,6 @@
 	},
 	{
 		"name": "Browser Copypasta",
-		"icon": "feather:clipboard",
 		"description": "A copypasta generator centred around browsers.",
 		"url": "https://github.com/akisblack/browser-copypasta",
 		"meta": {
@@ -23,7 +22,6 @@
 	},
 	{
 		"name": "Svelte Blog",
-		"icon": "ic:round-newspaper",
 		"description": "A blog template made in SvelteKit.",
 		"url": "https://github.com/akisblack/svelte-blog",
 		"meta": {
@@ -34,7 +32,6 @@
 	},
 	{
 		"name": "CSS Snippets",
-		"icon": "feather:scissors",
 		"description": "A collection of CSS snippets for https://powercord.dev.",
 		"url": "https://github.com/akisblack/CSS-Snippets",
 		"meta": {
@@ -45,7 +42,6 @@
 	},
 	{
 		"name": "Svelte Personal Site Template",
-		"icon": "gg:website",
 		"description": "A personal website template built with SvelteKit. It includes a blog, a project list and a contact page. ",
 		"url": "https://github.com/akisblack/svelte-personal-site-template",
 		"meta": {
