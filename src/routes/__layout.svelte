@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</svelte:head>
+
 <script>
 	import { MetaTags } from "svelte-meta-tags";
 	import Footer from "$lib/Footer.svelte";
