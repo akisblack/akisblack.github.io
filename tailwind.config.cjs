@@ -25,9 +25,6 @@ const config = {
 		fontFamily: {
 			primary: ["Outfit"]
 		},
-		screens: {
-			sm: { raw: "(max-width: 411px)" }
-		},
 		extend: {
 			boxShadow: {
 				custom: "0 4px 4px rgba(0, 0, 0, 0.16)"
