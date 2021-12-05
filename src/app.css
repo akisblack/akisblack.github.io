@@ -21,7 +21,7 @@ h1 {
 }
 
 .default-tip {
-	@apply mb-5;
+	@apply mb-6;
 }
 
 a {
