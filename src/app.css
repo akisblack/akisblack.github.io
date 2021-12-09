@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-	@apply m-auto max-w-[80%] mb-52 p-4;
+	@apply m-auto max-w-[80%] p-4;
 }
 
 h1 {

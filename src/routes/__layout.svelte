@@ -7,7 +7,6 @@
 
 <script>
 	import { MetaTags } from "svelte-meta-tags";
-	import Footer from "$lib/Footer.svelte";
 	import "../app.css";
 </script>
 
@@ -35,7 +34,4 @@
 		cardType: "summary_large_image"
 	}}
 />
-
 <slot />
-
-<Footer />
