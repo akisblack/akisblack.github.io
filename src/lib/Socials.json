@@ -1,37 +1,32 @@
 [
 	{
 		"url": "https://discord.gg/Mc9RUxwPrF",
-		"img": "la:discord",
 		"title": "Discord",
 		"color": "#5865F2",
 		"username": "akisblack#6148"
 	},
 	{
 		"url": "https://twitter.com/akisblack_",
-		"img": "feather:twitter",
 		"title": "Twitter",
 		"color": "#1DA1F2",
 		"username": "@akisblack_"
 	},
 	{
 		"url": "mailto:akisblack0@gmail.com",
-		"img": "feather:mail",
 		"title": "Email",
 		"color": "#EA4335",
 		"username": "akisblack"
 	},
 	{
 		"url": "https://github.com/akisblack",
-		"img": "feather:github",
 		"title": "GitHub",
 		"color": "#fff",
 		"username": "@akisblack"
 	},
 	{
 		"url": "https://matrix.to/#/@akisblack_:matrix.org",
-		"img": "simple-icons:matrix",
 		"title": "Matrix",
 		"color": "#fff",
-		"username": "@akisblack_@matrix.org"
+		"username": "@akisblack_:matrix.org"
 	}
 ]
