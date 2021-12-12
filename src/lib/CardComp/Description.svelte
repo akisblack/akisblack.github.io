@@ -1,3 +1,3 @@
 <h2 class="text-base text-greyish font-normal pb-2">
-	<slot />	
+	<slot />
 </h2>

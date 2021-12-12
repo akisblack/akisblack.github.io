@@ -12,7 +12,7 @@
 		{#each socials as { url, title, color, username }}
 			<a href={url}>
 				<Card name={title} {color}>
-					<Description slot="desc" >{username}</Description>
+					<Description slot="desc">{username}</Description>
 				</Card>
 			</a>
 		{/each}

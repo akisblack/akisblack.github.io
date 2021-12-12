@@ -11,12 +11,12 @@
 	<div>
 		{#each projects as { url, name, description, meta: { lang, color, license } }}
 			<Card {name} {color}>
-				<InfoButtonsPanel slot="btn" >
+				<InfoButtonsPanel slot="btn">
 					<InfoButton tip={lang} icon="feather:bookmark" />
 					<InfoButton tip={license} icon="lucide:scale" />
 					<InfoButtonLink tip="GitHub" icon="feather:github" {url} />
 				</InfoButtonsPanel>
-				<Description slot="desc" >{description}</Description>
+				<Description slot="desc">{description}</Description>
 			</Card>
 		{/each}
 	</div>

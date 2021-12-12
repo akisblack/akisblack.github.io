@@ -2,7 +2,6 @@
 	import Projects from "$lib/Projects.svelte";
 	import Socials from "$lib/Socials.svelte";
 	import { Tabs, TabList, TabPanel, Tab } from "$lib/TabsComp";
-	import { Card, InfoButtonsPanel, InfoButton, InfoButtonLink, Description } from "$lib/CardComp";
 </script>
 
 <div class="container text-center">
@@ -19,11 +18,11 @@
 			<Tab>Projects</Tab>
 			<Tab>Socials</Tab>
 		</TabList>
-	
+
 		<TabPanel>
 			<Projects />
 		</TabPanel>
-	
+
 		<TabPanel>
 			<Socials />
 		</TabPanel>

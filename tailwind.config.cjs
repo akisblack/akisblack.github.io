@@ -1,8 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 const config = {
-	mode: "jit",
-	purge: ["./src/**/*.{html,js,svelte,ts}"],
+	content: ["./src/**/*.{html,js,svelte,ts}"],
 
 	theme: {
 		colors: {
@@ -20,7 +19,7 @@ const config = {
 			current: "currentColor",
 			black: colors.black,
 			white: colors.white,
-			gray: colors.trueGray
+			gray: colors.neutral
 		},
 		fontFamily: {
 			primary: ["Outfit"]
