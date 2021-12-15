@@ -1,7 +1,7 @@
 <script>
 	import socials from "$lib/Socials.json";
 	import Icon from "@iconify/svelte";
-	import { Card, Description } from "$lib/CardComp";
+	import { Card, InfoButtonsPanel, InfoButtonLink, Description } from "$lib/CardComp";
 </script>
 
 <div class="socials">
@@ -10,11 +10,12 @@
 	</h1>
 	<div>
 		{#each socials as { url, title, color, username }}
-			<a href={url}>
 				<Card name={title} {color}>
 					<Description slot="desc">{username}</Description>
+					<InfoButtonsPanel slot="btn">
+						<InfoButtonLink tip="Go to profile" icon="feather:external-link" {url} />
+					</InfoButtonsPanel>
 				</Card>
-			</a>
 		{/each}
 	</div>
 </div>

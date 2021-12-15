@@ -21,7 +21,11 @@ h1 {
 }
 
 .default-tip {
-	@apply mb-6;
+	@apply mb-2;
+}
+
+.tooltip {
+	@apply -mt-5 ml-2 !important;
 }
 
 a {

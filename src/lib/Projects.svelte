@@ -12,8 +12,8 @@
 		{#each projects as { url, name, description, meta: { lang, color, license } }}
 			<Card {name} {color}>
 				<InfoButtonsPanel slot="btn">
-					<InfoButton tip={lang} icon="feather:bookmark" />
-					<InfoButton tip={license} icon="lucide:scale" />
+					<InfoButton tip="Made with {lang}" icon="feather:bookmark" />
+					<InfoButton tip="{license} License" icon="lucide:scale" />
 					<InfoButtonLink tip="GitHub" icon="feather:github" {url} />
 				</InfoButtonsPanel>
 				<Description slot="desc">{description}</Description>
