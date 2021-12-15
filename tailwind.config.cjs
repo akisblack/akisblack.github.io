@@ -24,7 +24,16 @@ const config = {
 				},
 				greyish: "#c8c8c8",
 				transparent: "transparent",
-				current: "currentColor",
+				current: "currentColor"
+			},
+			keyframes: {
+				fade: {
+					"0%": {opacity: "0"},
+					"100%": {opacity: "1"}
+				}
+			},
+			animation: {
+				fade: "fade .7s"
 			}
 		}
 	}
