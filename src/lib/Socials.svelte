@@ -10,12 +10,12 @@
 	</h1>
 	<div>
 		{#each socials as { url, title, color, username }}
-				<Card name={title} {color}>
-					<Description slot="desc">{username}</Description>
-					<InfoButtonsPanel slot="btn">
-						<InfoButtonLink tip="Go to profile" icon="feather:external-link" {url} />
-					</InfoButtonsPanel>
-				</Card>
+			<Card name={title} {color}>
+				<Description slot="desc">{username}</Description>
+				<InfoButtonsPanel slot="btn">
+					<InfoButtonLink tip="Go to profile" icon="feather:external-link" {url} />
+				</InfoButtonsPanel>
+			</Card>
 		{/each}
 	</div>
 </div>

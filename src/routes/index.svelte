@@ -2,7 +2,6 @@
 	import Projects from "$lib/Projects.svelte";
 	import Socials from "$lib/Socials.svelte";
 	import { Tabs, TabList, TabPanel, Tab } from "$lib/TabsComp";
-	import { fade } from "svelte/transition";
 </script>
 
 <div class="container text-center">
