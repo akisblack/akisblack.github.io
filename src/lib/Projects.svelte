@@ -22,7 +22,8 @@
 					name == "browser-copypasta" || 
 					name == "svelte-blog" || 
 					name == "CSS-Snippets" || 
-					name == "svelte-personal-site-template"
+					name == "svelte-personal-site-template" ||
+					name == "dark-discord-vscode"
 				)
 			}
 				<Card {name} >
@@ -33,8 +34,12 @@
 						{#if fork}
 							<InfoButton tip="Forked" icon="octicon:repo-forked-16" />
 						{/if}
+						{#if language}
 						<InfoButton tip="Made with {language}" icon="feather:bookmark" />
+						{/if}
+						{#if license}
 						<InfoButton tip={license?.name} icon="lucide:scale" />
+						{/if}
 						<InfoButtonLink tip="GitHub" icon="feather:github" url={html_url} />
 					</InfoButtonsPanel>
 					<Description slot="desc">{description}</Description>
