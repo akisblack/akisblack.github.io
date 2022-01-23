@@ -1,7 +1,5 @@
-import { minify } from "html-minifier";
-import { prerendering } from "$app/env";
-
-export const prerender = true;
+import { minify } from 'html-minifier';
+import { prerendering } from '$app/env';
 
 const minification_options = {
 	collapseBooleanAttributes: true,
@@ -11,7 +9,7 @@ const minification_options = {
 	html5: true,
 	ignoreCustomComments: [/^#/],
 	minifyCSS: true,
-	minifyJS: true,
+	minifyJS: false,
 	removeAttributeQuotes: true,
 	removeComments: true,
 	removeOptionalTags: true,
@@ -22,11 +20,14 @@ const minification_options = {
 	sortClassName: true
 };
 
-export async function handle({ request, resolve }) {
-	const response = await resolve(request);
+export async function handle({ event, resolve }) {
+	const response = await resolve(event);
 
-	if (prerendering && response.headers["content-type"] === "text/html") {
-		response.body = minify(response.body, minification_options);
+	if (prerendering && response.headers.get('content-type') === 'text/html') {
+		return new Response(minify(await response.text(), minification_options), {
+    		status: response.status,
+    		headers: response.headers
+    	});
 	}
 
 	return response;
