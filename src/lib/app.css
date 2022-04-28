@@ -1,3 +1,19 @@
+html.dark {
+    --primary: #141414;
+    --secondary: #2e2e2e;
+    --tertiary: #474747;
+    --greyish: #c8c8c8;
+    --accent: #98f5e1;
+}
+
+html.light {
+    --primary: #dddddd;
+    --secondary: #f9f3f3;
+    --tertiary: #939393;
+    --greyish: #444444;
+    --accent: #0a9396;
+}
+
 @font-face {
 	font-family: Outfit;
 	src: url(/Outfit.ttf);
