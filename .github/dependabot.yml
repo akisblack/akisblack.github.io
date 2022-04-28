@@ -5,8 +5,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/" # Location of package manifests
-    target-branch: "master"
-    schedule:
-      interval: "monthly"
+    - package-ecosystem: "npm"
+      directory: "/" # Location of package manifests
+      target-branch: "master"
+      schedule:
+          interval: "monthly"

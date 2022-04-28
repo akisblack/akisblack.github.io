@@ -1,0 +1,28 @@
+@font-face {
+	font-family: Outfit;
+	src: url(/Outfit.ttf);
+}
+
+body {
+	@apply bg-primary duration-400 font-sans transition;
+}
+
+.container {
+	@apply mx-auto mt-24 max-w-3xl px-8;
+}
+
+h1 {
+	@apply text-4xl font-bold;
+}
+
+.default-tip {
+	@apply !bg-secondary !mb-2 !rounded-lg;
+}
+
+.tooltip {
+	@apply !-mt-5 !ml-2;
+}
+
+a {
+	@apply text-accent;
+}

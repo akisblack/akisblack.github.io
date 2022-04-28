@@ -5,7 +5,7 @@
 ![GitHub](https://img.shields.io/github/license/akisblack/akisblack.github.io?style=for-the-badge)
 ![Website](https://img.shields.io/website?down_color=red&down_message=offline&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fakisblack.github.io)
 
-### My site written in [SvelteKit](https://kit.svelte.dev).
+### My site written in [Svelte](https://svelte.dev).
 
 ---
 
@@ -31,10 +31,10 @@ Runs a development server on http://localhost:3000.
 
 #### pnpm build
 
-Builds the project into the `build` folder.
+Builds the project into the `dist` folder.
 
 #### pnpm preview
 
-Runs the built project on http://localhost:3000.
+Runs the built project on http://localhost:4173.
 
 ---
