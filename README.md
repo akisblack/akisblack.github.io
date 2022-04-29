@@ -13,9 +13,9 @@
 
 ### Prerequisites
 
-- Install [node.js](https://nodejs.org).
-- Install [pnpm](https://pnpm.io/).
-- Learn [Svelte](https://svelte.dev).
+-   Install [node.js](https://nodejs.org).
+-   Install [pnpm](https://pnpm.io/).
+-   Learn [Svelte](https://svelte.dev).
 
 ### Install dependencies
 

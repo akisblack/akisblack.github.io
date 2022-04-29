@@ -10,7 +10,7 @@
 			<ThemeToggle />
 		</div>
 	</div>
-	<span class="text-4xl font-semibold">akisblack</span>
+	<h1>akisblack</h1>
 	<img
 		src="https://skillicons.dev/icons?i=css,git,github,html,linux,md,netlify,svelte,windicss,vscode"
 		alt="Skill Icons"

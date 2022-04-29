@@ -8,6 +8,6 @@
 
 <SvelteTooltip {tip} top>
 	<a href={url}>
-		<div class="text-greyish ml-4 {icon} h-[20px]" />
+		<div class="text-greyish ml-4 {icon} h-5" />
 	</a>
 </SvelteTooltip>

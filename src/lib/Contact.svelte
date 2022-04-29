@@ -1,5 +1,5 @@
 <script lang="ts">
-	import socials from "./Contact.json";
+	import contact from "./Contact.json";
 	import {
 		Card,
 		InfoButtonsPanel,
@@ -11,7 +11,7 @@
 <div class="contact">
 	<h1 class="mt-6 flex max-w-min items-center self-start">Contact</h1>
 	<div>
-		{#each socials as { url, title, color, username }}
+		{#each contact as { url, title, color, username }}
 			<Card name={title} {color}>
 				<Description slot="desc">{username}</Description>
 				<InfoButtonsPanel slot="btn">

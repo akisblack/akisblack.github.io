@@ -1,17 +1,17 @@
 html.dark {
-    --primary: #141414;
-    --secondary: #2e2e2e;
-    --tertiary: #474747;
-    --greyish: #c8c8c8;
-    --accent: #98f5e1;
+	--primary: #141414;
+	--secondary: #2e2e2e;
+	--tertiary: #474747;
+	--greyish: #c8c8c8;
+	--accent: #98f5e1;
 }
 
 html.light {
-    --primary: #dddddd;
-    --secondary: #f9f3f3;
-    --tertiary: #939393;
-    --greyish: #444444;
-    --accent: #0a9396;
+	--primary: #dddddd;
+	--secondary: #f9f3f3;
+	--tertiary: #939393;
+	--greyish: #444444;
+	--accent: #0a9396;
 }
 
 @font-face {
@@ -20,7 +20,7 @@ html.light {
 }
 
 body {
-	@apply bg-primary duration-400 font-sans transition;
+	@apply bg-primary duration-400 font-primary transition;
 }
 
 .container {
@@ -40,5 +40,5 @@ h1 {
 }
 
 a {
-	@apply text-accent;
+	@apply text-accent underline underline-offset-4;
 }

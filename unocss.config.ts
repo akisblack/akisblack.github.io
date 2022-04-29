@@ -24,7 +24,7 @@ export default defineConfig({
 
 	theme: {
 		fontFamily: {
-			sans: ["Outfit"]
+			primary: ["Outfit"]
 		},
 		margin: {
 			"0-auto": "0 auto"
