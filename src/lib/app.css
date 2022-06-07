@@ -20,7 +20,7 @@ html.light {
 }
 
 body {
-	@apply bg-primary duration-400 font-primary transition;
+	@apply bg-primary duration-400 font-primary text-greyish transition;
 }
 
 .container {

@@ -19,7 +19,7 @@
 	<h1 class="mt-6 flex max-w-min items-center self-start">Projects</h1>
 	<div on:show={fetchRepos()}>
 		{#each repos as { html_url, name, description, language, license, archived, fork }}
-			{#if name == "dark-discord-vscode" || name == "browser-copypasta" || name == "svelte-blog"}
+			{#if name === "dark-discord-vscode" || name === "browser-copypasta" || name === "svelte-blog"}
 				<Card {name}>
 					<InfoButtonsPanel slot="btn">
 						{#if archived}
