@@ -19,11 +19,11 @@
 	"devDependencies": {
 		"@iconify-json/ic": "^1.1.4",
 		"@iconify-json/octicon": "^1.1.11",
-		"@iconify-json/simple-icons": "^1.1.14",
-		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.47",
+		"@iconify-json/simple-icons": "^1.1.16",
+		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
 		"@tsconfig/svelte": "^3.0.0",
-		"@unocss/reset": "^0.38.0",
-		"prettier": "^2.6.2",
+		"@unocss/reset": "^0.39.3",
+		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
 		"prettier-plugin-tailwindcss": "^0.1.11",
 		"svelte": "^3.48.0",
@@ -33,8 +33,8 @@
 		"svelte-seo": "^1.4.1",
 		"svelte-tooltip": "^1.2.0",
 		"tslib": "^2.4.0",
-		"typescript": "^4.7.3",
-		"unocss": "^0.38.0",
-		"vite": "^2.9.10"
+		"typescript": "^4.7.4",
+		"unocss": "^0.39.3",
+		"vite": "^2.9.12"
 	}
 }

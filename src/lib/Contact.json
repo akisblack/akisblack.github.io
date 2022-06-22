@@ -15,7 +15,8 @@
 		"url": "mailto:akisblack0@gmail.com",
 		"title": "Email",
 		"color": "#EA4335",
-		"username": "akisblack0@gmail.com"
+		"username": "akisblack0@gmail.com",
+		"publicKey": "/akisblack_public_key.asc"
 	},
 	{
 		"url": "https://github.com/akisblack",
