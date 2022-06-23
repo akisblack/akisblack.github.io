@@ -8,7 +8,7 @@
 	style="border-color: {color};"
 >
 	<div class="flex items-center pb-2">
-		<p class="text-greyish text-xl font-bold">{name.replace(/\./g, "-")}</p>
+		<p class="text-greyish text-xl font-bold break-words hyphens-auto">{name}</p>
 		<slot name="btn" />
 	</div>
 	<slot name="desc" />
