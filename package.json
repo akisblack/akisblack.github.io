@@ -22,7 +22,7 @@
 		"@iconify-json/simple-icons": "^1.1.16",
 		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.49",
 		"@tsconfig/svelte": "^3.0.0",
-		"@unocss/reset": "^0.39.3",
+		"@unocss/reset": "^0.42.0",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
 		"prettier-plugin-tailwindcss": "^0.1.11",
