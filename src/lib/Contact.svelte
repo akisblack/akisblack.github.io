@@ -22,7 +22,7 @@
 					/>
 					{#if publicKey}
 						<InfoButtonLink
-							tip="Public GPG key"
+							tip="Public PGP key"
 							icon="i-ic:outline-vpn-key"
 							url={publicKey}
 						/>

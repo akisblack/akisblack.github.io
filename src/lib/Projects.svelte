@@ -1,10 +1,5 @@
 <script lang="ts">
-	let repos = [];
-	async function fetchRepos() {
-		const url = `https://gh-pinned-repos.egoist.sh/?username=akisblack`;
-		const response = await fetch(url);
-		repos = await response.json();
-	}
+	import projects from "./Projects.json";
 
 	import {
 		Card,
@@ -17,9 +12,9 @@
 
 <div class="projects">
 	<h1 class="mt-6 flex max-w-min items-center self-start">Projects</h1>
-	<div on:show={fetchRepos()}>
-		{#each repos as { link, owner, repo, description, language, languageColor }}
-			<Card name="{owner}/{repo}" color={languageColor}>
+	<div>
+		{#each projects as { link, name, description, language, color, license }}
+			<Card {name} {color}>
 				<InfoButtonsPanel slot="btn">
 					{#if language}
 						<InfoButton
@@ -32,6 +27,12 @@
 						icon="i-simple-icons:github"
 						url={link}
 					/>
+					{#if license}
+						<InfoButton
+							tip={license}
+							icon="i-octicon:law-16"
+						/>
+					{/if}
 				</InfoButtonsPanel>
 				<Description slot="desc">{description}</Description>
 			</Card>
