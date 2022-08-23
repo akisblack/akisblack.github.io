@@ -11,26 +11,19 @@
 	import {
 		Card,
 		InfoButtonsPanel,
-		InfoButton,
 		InfoButtonLink,
 		Description
 	} from "./Card";
 </script>
 
 	<div class="projects">
-		<h1 class="mt-6 flex max-w-min items-center self-start">Projects</h1>
+		<h1 class="mt-6">Projects</h1>
 		{#await promise}
 			<span>Loading projects...</span>
 		{:then}
-			{#each repos as { link, owner, repo, description, language, languageColor }}
+			{#each repos as { link, owner, repo, description, languageColor }}
 				<Card name="{owner}/{repo}" color={languageColor}>
 					<InfoButtonsPanel slot="btn">
-						{#if language}
-							<InfoButton
-								tip="Made with {language}"
-								icon="i-octicon:bookmark-16"
-							/>
-						{/if}
 						<InfoButtonLink
 							tip="Website"
 							icon="i-ic:language"
