@@ -2,7 +2,6 @@
 	import SvelteSEO from "svelte-seo";
 	import Hero from "./lib/Hero.svelte";
 	import Projects from "./lib/Projects.svelte";
-	import Contact from "./lib/Contact.svelte";
 	import Footer from "./lib/Footer.svelte";
 </script>
 
@@ -28,6 +27,5 @@
 <div class="container">
 	<Hero />
 	<Projects />
-	<Contact />
 	<Footer />
 </div>

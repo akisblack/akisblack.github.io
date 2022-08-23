@@ -27,7 +27,7 @@ pnpm i
 
 #### pnpm dev
 
-Runs a development server on http://localhost:3000.
+Runs a development server on http://localhost:5173.
 
 #### pnpm build
 

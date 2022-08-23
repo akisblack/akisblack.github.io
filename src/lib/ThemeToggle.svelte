@@ -13,7 +13,7 @@
 <DarkMode bind:theme />
 
 <button
-	class="bg-greyish text-primary duration-400 flex h-10 w-10 items-center justify-center rounded-lg transition"
+	class="bg-grey text-primary duration-400 flex h-10 w-10 items-center justify-center rounded transition"
 	on:click={toggle}
 >
 	{#if theme === "dark"}

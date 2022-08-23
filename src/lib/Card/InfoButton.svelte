@@ -6,5 +6,5 @@
 </script>
 
 <SvelteTooltip {tip} top>
-	<div class="ml-4 h-5 {icon} text-greyish" />
+	<div class="ml-4 h-5 {icon} text-grey" />
 </SvelteTooltip>

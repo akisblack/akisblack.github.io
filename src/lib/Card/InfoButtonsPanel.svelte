@@ -1,3 +1,3 @@
-<div class="text-greyish ml-auto flex cursor-pointer">
+<div class="text-grey ml-auto flex cursor-pointer">
 	<slot />
 </div>

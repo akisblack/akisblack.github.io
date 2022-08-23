@@ -1,17 +1,17 @@
-html.dark {
+html {
 	--primary: #141414;
-	--secondary: #2e2e2e;
-	--tertiary: #474747;
-	--greyish: #c8c8c8;
-	--accent: #98f5e1;
+	--secondary: #222222;
+	--tertiary: #141414;
+	--grey: #c8c8c8;
+	--accent: #0dcf8e;
 }
 
 html.light {
 	--primary: #dddddd;
-	--secondary: #f9f3f3;
-	--tertiary: #939393;
-	--greyish: #444444;
-	--accent: #0a9396;
+	--secondary: #ffffff;
+	--tertiary: #141414;
+	--grey: #444444;
+	--accent: #0a9e6d;
 }
 
 @font-face {
@@ -20,7 +20,7 @@ html.light {
 }
 
 body {
-	@apply bg-primary duration-400 font-primary text-greyish transition;
+	@apply bg-primary duration-400 font-primary text-grey transition;
 }
 
 .container {
@@ -32,7 +32,7 @@ h1 {
 }
 
 .default-tip {
-	@apply !bg-secondary !mb-2 !rounded-lg;
+	@apply !bg-primary !mb-2 !rounded;
 }
 
 .tooltip {

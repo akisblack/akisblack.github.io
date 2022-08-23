@@ -1,7 +1,6 @@
 import {
 	defineConfig,
 	presetIcons,
-	presetTypography,
 	transformerVariantGroup,
 	transformerDirectives,
 	presetWind
@@ -14,7 +13,6 @@ export default defineConfig({
 
 	presets: [
 		presetIcons(),
-		presetTypography(),
 		presetWind({
 			dark: "class"
 		})
@@ -33,7 +31,7 @@ export default defineConfig({
 			primary: "var(--primary)",
 			secondary: "var(--secondary)",
 			tertiary: "var(--tertiary)",
-			greyish: "var(--greyish)",
+			grey: "var(--grey)",
 			accent: "var(--accent)",
 			transparent: "transparent",
 			current: "currentColor"
