@@ -10,8 +10,6 @@
 
 	import {
 		Card,
-		InfoButtonsPanel,
-		InfoButtonLink,
 		Description
 	} from "./Card";
 </script>
@@ -22,16 +20,11 @@
 			<span>Loading projects...</span>
 		{:then}
 			{#each repos as { link, owner, repo, description, languageColor }}
-				<Card name="{owner}/{repo}" color={languageColor}>
-					<InfoButtonsPanel slot="btn">
-						<InfoButtonLink
-							tip="Website"
-							icon="i-ic:language"
-							url={link}
-						/>
-					</InfoButtonsPanel>
-					<Description slot="desc">{description}</Description>
-				</Card>
+				<a href={link} class="no-underline hover:opacity-100">
+					<Card name="{owner}/{repo}" color={languageColor}>
+						<Description slot="desc">{description}</Description>
+					</Card>
+				</a>
 			{/each}
 		{:catch}
 			<span>Failed to load projects.</span>
