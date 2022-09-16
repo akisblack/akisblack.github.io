@@ -20,6 +20,8 @@ export default defineConfig({
 
 	transformers: [transformerVariantGroup(), transformerDirectives()],
 
+	safelist: ["i-ic:outline-dark-mode", "i-ic:outline-light-mode"],
+
 	theme: {
 		fontFamily: {
 			primary: ["Outfit"]
