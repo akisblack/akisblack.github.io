@@ -21,7 +21,7 @@
 		{:then}
 			{#each repos as { link, owner, repo, description, languageColor }}
 				<a href={link} class="no-underline hover:opacity-100">
-					<Card name="{owner}/{repo}" color={languageColor}>
+					<Card name="{owner === "akisblack" ? "" : `${owner}/`}{repo}" color={languageColor}>
 						<Description slot="desc">{description}</Description>
 					</Card>
 				</a>
