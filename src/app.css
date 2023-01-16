@@ -1,17 +1,21 @@
-html {
-	--primary: #141414;
-	--secondary: #222222;
-	--tertiary: #141414;
-	--grey: #c8c8c8;
-	--accent: #0dcf8e;
-}
-
-html.light {
+html, html.light {
 	--primary: #dddddd;
 	--secondary: #ffffff;
 	--tertiary: #141414;
 	--grey: #444444;
 	--accent: #0a9e6d;
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--primary: #141414;
+		--secondary: #222222;
+		--tertiary: #141414;
+		--grey: #c8c8c8;
+		--accent: #0dcf8e;
+		color-scheme: dark;
+	}
 }
 
 @font-face {

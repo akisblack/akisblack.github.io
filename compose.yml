@@ -1,0 +1,11 @@
+services:
+    website:
+        container_name: website
+        image: ghcr.io/akisblack/website:latest
+        restart: unless-stopped
+        # uncomment these lines if you want to build from source
+        #build:
+        #    context: .
+        #    dockerfile: Dockerfile
+        ports:
+            - "127.0.0.1:1339:3000"

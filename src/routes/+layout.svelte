@@ -1,8 +1,10 @@
 <script lang="ts">
 	import SvelteSEO from "svelte-seo";
-	import Hero from "./lib/Hero.svelte";
-	import Projects from "./lib/Projects.svelte";
-	import Footer from "./lib/Footer.svelte";
+	import Hero from "$lib/Hero.svelte";
+	import Footer from "$lib/Footer.svelte";
+	import "uno.css";
+	import "@unocss/reset/tailwind.css";
+	import "../app.css";
 </script>
 
 <SvelteSEO
@@ -24,8 +26,8 @@
 	}}
 />
 
-<div class="container">
+<main class="container">
 	<Hero />
-	<Projects />
+	<slot />
 	<Footer />
-</div>
+</main>

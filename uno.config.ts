@@ -1,6 +1,7 @@
 import {
 	defineConfig,
 	presetIcons,
+	presetTypography,
 	transformerVariantGroup,
 	transformerDirectives,
 	presetWind
@@ -15,7 +16,8 @@ export default defineConfig({
 		presetIcons(),
 		presetWind({
 			dark: "class"
-		})
+		}),
+		presetTypography()
 	],
 
 	transformers: [transformerVariantGroup(), transformerDirectives()],

@@ -1,3 +1,3 @@
 # Website
 
-My site written in [Svelte](https://svelte.dev).
+My site written in [SvelteKit](https://kit.svelte.dev).
