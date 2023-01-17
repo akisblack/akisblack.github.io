@@ -18,6 +18,7 @@
 <button
 	class="bg-grey text-primary duration-400 flex h-10 w-10 items-center justify-center rounded transition"
 	on:click={toggle}
+	aria-label="Toggle theme"
 >
 	<i class="i-ic:outline-{theme === "dark" ? "light" : "dark"}-mode h-6 w-6" />
 </button>

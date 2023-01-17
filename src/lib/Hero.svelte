@@ -18,9 +18,9 @@
 				<a href="/" class="!text-4xl !font-bold underline-offset-6">akisblack</a>
 			{/if}
 			<div class="flex flex-row items-center gap-3">
-				<a href="https://matrix.to/#/@akis:projectsegfau.lt"><div class="i-simple-icons:matrix" /></a>
-				<a href="mailto:akisblack0@gmail.com"><div class="i-ic:mail-outline" /></a>
-				<a href="https://github.com/akisblack"><div class="i-simple-icons:github" /></a>
+				<a href="https://matrix.to/#/@akis:projectsegfau.lt" aria-label="Matrix"><div class="i-simple-icons:matrix" /></a>
+				<a href="mailto:akisblack0@gmail.com" aria-label="Email"><div class="i-ic:mail-outline" /></a>
+				<a href="https://github.com/akisblack" aria-label="GitHub"><div class="i-simple-icons:github" /></a>
 				{#if !isServices}
 					<a href="/services" class="!text-lg">Services</a>
 				{/if}

@@ -15,14 +15,14 @@
 
 	<h3>Technical information</h3>
 
-	<p>The VPS is provided by OVHcloud, has 1 CPU and 2GB RAM and is located in Germany. It runs Debian 11 and uses Caddy as its web server (fuck NGINX). All the services (except Caddy and Cockpit) run under Docker for improved security and for my own sanity.</p>
+	<p>The VPS is provided by OVHcloud, has 1 CPU and 2GB RAM and is located in Germany. It runs Debian 11 and uses Caddy as its web server (fuck NGINX). All the services (except Caddy, Cockpit and ... Docker) run under Docker for improved security and for my own sanity.</p>
 
 	<h3>Why should I use your services?</h3>
 
 	<ul>
-		<li>Automatic updates - The services are auto-updated every 12 hours, so you get the latest and greatest.</li>
+		<li>Automatic updates - The services are auto-updated every 3 hours, so you get the latest and greatest.</li>
 		<li>EU based - The VPS that hosts these services is located in Germany, an EU country, which has strict privacy laws.</li>
-		<li>Your data is not being used - I do not sell or do anything with your data (most of the times i dont know who "you" are.)</li>
+		<li>Your data is not being used - I do not sell or do anything with your data (most of the times i dont know who "you" are).</li>
 		<li>Probably secure - While I am quite new to this, I make sure to use the most secure tech, including Debian, Caddy and Docker.</li>
 		<li>Stock experience - As a fan of stock Android, I believe having a stock and unmodified experience is key to understanding how a service works and looks.</li>
 	</ul>

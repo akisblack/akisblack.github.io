@@ -1,9 +1,9 @@
 html, html.light {
-	--primary: #dddddd;
-	--secondary: #ffffff;
+	--primary: #ffffff;
+	--secondary: #eeeeee;
 	--tertiary: #141414;
 	--grey: #444444;
-	--accent: #0a9e6d;
+	--accent: #088058;
 	color-scheme: light;
 }
 
@@ -20,7 +20,8 @@ html, html.light {
 
 @font-face {
 	font-family: Outfit;
-	src: url(/Outfit.ttf);
+	src: url(/Outfit.woff2);
+	font-display: swap;
 }
 
 body {
