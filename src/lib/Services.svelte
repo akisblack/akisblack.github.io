@@ -27,6 +27,20 @@
 		<li>Stock experience - As a fan of stock Android, I believe having a stock and unmodified experience is key to understanding how a service works and looks.</li>
 	</ul>
 
+	<h3>I like your services, how do I <span class="bg-amber text-[#141414]">donate</span>?</h3>
+
+	<p>While donations are not required, you can donate to me using Monero (XMR). My address, and QR code are below, but you can also use <a href="https://akisblack.dev">akisblack.dev</a> in an OpenAlias compatible client!</p>
+
+	<details class="p-0">
+		<summary>Address</summary>
+		<div class="mt-4"><code class="break-words whitespace-normal">49burTxWHyqa9NkkC9PV33D79PrwARMq8aic4XezTx36i66qyLA3afYXicycTTA5st93CV5Rr9AGkKpeE5GPueRN2PkfFQN</code></div>
+	</details>
+
+	<details class="p-0">
+		<summary>QR code</summary>
+		<img src="/monero.png" alt="Monero QR code" class="mt-4" />
+	</details>
+
 	{#if hasJS}
 		<h3 id="privacy-policy" class="cursor-pointer group flex flex-row items-center w-fit" use:copy={"https://akisblack.dev/services#privacy-policy"}><span class="underline underline-offset-6">Privacy policy</span> <small class="text-sm font-normal opacity-0 group-hover:opacity-100 mt-1 ml-1 transition-opacity duration-250">Click to copy</small></h3>
 	{:else}
