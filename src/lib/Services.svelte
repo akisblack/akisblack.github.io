@@ -7,7 +7,7 @@
 <div class="services prose">
 	<h1 class="mt-6">Services</h1>
 
-	<p>I host a bunch of public services on a VPS.</p>
+	<p>I host a bunch of public services on a VPS and the Project Segfault pubnix.</p>
 
 	<h3>But where are the instances!!!????</h3>
 
@@ -17,11 +17,13 @@
 
 	<p>The VPS is provided by OVHcloud, has 1 CPU and 2GB RAM and is located in Germany. It runs Debian 11 and uses Caddy as its web server (fuck NGINX). All the services (except Caddy, Cockpit and ... Docker) run under Docker for improved security and for my own sanity.</p>
 
+	<p>The services that run on the Project Segfault pubnix are hosted on the Soleil Levant server of Project Segfault. You can find more info about those on <a href="https://projectsegfau.lt">the Project Segfault website</a> and <a href="https://wiki.projectsegfau.lt">the Project Segfault wiki</a>.</p>
+
 	<h3>Why should I use your services?</h3>
 
 	<ul>
 		<li>Automatic updates - The services are auto-updated every 3 hours, so you get the latest and greatest.</li>
-		<li>EU based - The VPS that hosts these services is located in Germany, an EU country, which has strict privacy laws.</li>
+		<li>EU based - The services are hosted in France and Germany, both EU countries, which have strict privacy laws.</li>
 		<li>Your data is not being used - I do not sell or do anything with your data (most of the times i dont know who "you" are).</li>
 		<li>Probably secure - While I am quite new to this, I make sure to use the most secure tech, including Debian, Caddy and Docker.</li>
 		<li>Stock experience - As a fan of stock Android, I believe having a stock and unmodified experience is key to understanding how a service works and looks.</li>
