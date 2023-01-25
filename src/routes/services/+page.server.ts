@@ -2,12 +2,11 @@ import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async ({ fetch }) => {
 	const meta = {
-		title: "Home",
-		description: "Web developer, Linux enthusiast and average Greek."
+		title: "Services"
 	}
 
 	return {
-		projects: await fetch("/api/projects").then(
+		announcements: await fetch("/api/announcements").then(
 			(res) => res.json()
 		),
 		...meta

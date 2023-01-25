@@ -1,33 +1,27 @@
 <script lang="ts">
-	import SvelteSEO from "svelte-seo";
 	import Hero from "$lib/Hero.svelte";
 	import Footer from "$lib/Footer.svelte";
 	import "uno.css";
 	import "@unocss/reset/tailwind.css";
 	import "../app.css";
+	import PageTransition from "$lib/PageTransition.svelte";
+	import { page } from "$app/stores";
+	import type { LayoutData } from "./$types";
+
+	export let data: LayoutData;
 </script>
 
-<SvelteSEO
-	title="akisblack"
-	description="My website"
-	canonical="https://akisblack.github.io/"
-	openGraph={{
-		url: "https://akisblack.github.io/",
-		title: "akisblack",
-		description: "My website",
-		images: [
-			{
-				url: "https://akisblack.github.io/logo.png",
-				width: 512,
-				height: 512,
-				alt: "My logo"
-			}
-		]
-	}}
-/>
+<svelte:head>
+	<title>{$page.data.title} | akisblack</title>
+	{#if $page.data.description}
+		<meta name="description" content={$page.data.description} />
+	{/if}
+</svelte:head>
 
 <main class="container">
 	<Hero />
-	<slot />
+	<PageTransition pathname={data.pathname}>
+		<slot />
+	</PageTransition>
 	<Footer />
 </main>
