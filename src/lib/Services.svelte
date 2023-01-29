@@ -57,7 +57,32 @@
 
 	<h3>But where are the instances!!!????</h3>
 
-	<p>You can find a list of all services/instances hosted on the VPS on <a href="https://status.akisblack.dev">the status page</a>.</p>
+	{#each data.statusData.publicGroupList as category}
+		<h4>{category.name}</h4>
+		<div class="flex flex-row flex-wrap gap-4">
+			{#each category.monitorList as instance}
+				{@const isUp = data.heartbeatApi.heartbeatList[instance.tags[0].monitor_id][0].status === 1 ? true : false}
+				{@const uptime = data.heartbeatApi.uptimeList[instance.tags[0].monitor_id + "_" + 24] * 100}
+				{@const ping = data.heartbeatApi.heartbeatList[instance.tags[0].monitor_id][0].ping }
+				{@const itemsInArray = instance.name.split(" ").length}
+				{@const pillStyles = "bg-opacity-20 rounded px-[2px] w-fit"}
+				<a href={"https://" + instance.name.split(" ")[itemsInArray === 3 ? 2 : 1].split("(")[1]?.split(")")[0]} class="no-underline {isUp ? "" : "pointer-events-none"}">
+					<div class="bg-secondary w-56 h-20 rounded p-2 flex flex-row justify-center items-center gap-2">
+						<span>{itemsInArray === 3 ? instance.name.split(" ")[0] + " " + instance.name.split(" ")[1] : instance.name.split(" ")[0]}</span>
+						{#if !isUp}
+							<span class="bg-red text-red {pillStyles}">Down</span>
+						{/if}
+						<span class="{uptime !== 0 ? "bg-green text-green" : "bg-red text-red"} {pillStyles}">{uptime + "%"}</span>
+						{#if isUp}
+							<span class="bg-green text-green {pillStyles}">{ping + "MS"}</span>
+						{/if}
+					</div>
+				</a>
+			{/each}
+		</div>
+	{/each}
+
+	<p>...or <a href="https://status.akisblack.dev">on the status page</a>.</p>
 
 	<h3>Technical information</h3>
 
