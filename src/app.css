@@ -4,6 +4,10 @@ html, html.light {
 	--tertiary: #141414;
 	--grey: #444444;
 	--accent: #009b50;
+	--green-bg: #4ade8033;
+	--green-text: #15803d;
+	--red-bg: #f8717133;
+	--red-text: #b91c1c;
 	color-scheme: light;
 }
 
@@ -14,6 +18,8 @@ html, html.light {
 		--tertiary: #141414;
 		--grey: #c8c8c8;
 		--accent: #0dcf8e;
+		--green-text: #4ade80;
+		--red-text: #f87171;
 		color-scheme: dark;
 	}
 }

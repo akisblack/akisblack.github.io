@@ -22,7 +22,7 @@ export default defineConfig({
 
 	transformers: [transformerVariantGroup(), transformerDirectives()],
 
-	safelist: ["i-ic:outline-dark-mode", "i-ic:outline-light-mode"],
+	safelist: ["i-ic:outline-dark-mode", "i-ic:outline-light-mode", "bg-[#DC2626]", "bg-[#7C3AED]", "text-[#DC2626]", "text-[#7C3AED]"],
 
 	theme: {
 		fontFamily: {
@@ -37,6 +37,10 @@ export default defineConfig({
 			tertiary: "var(--tertiary)",
 			grey: "var(--grey)",
 			accent: "var(--accent)",
+			"greenBg": "var(--green-bg)",
+			"greenText": "var(--green-text)",
+			"redBg": "var(--red-bg)",
+			"redText": "var(--red-text)",
 			transparent: "transparent",
 			current: "currentColor"
 		}

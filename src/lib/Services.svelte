@@ -57,30 +57,39 @@
 
 	<h3>But where are the instances!!!????</h3>
 
-	{#each data.statusData.publicGroupList as category}
-		<h4>{category.name}</h4>
-		<div class="flex flex-row flex-wrap gap-4">
-			{#each category.monitorList as instance}
-				{@const isUp = data.heartbeatApi.heartbeatList[instance.tags[0].monitor_id][0].status === 1 ? true : false}
-				{@const uptime = data.heartbeatApi.uptimeList[instance.tags[0].monitor_id + "_" + 24] * 100}
-				{@const ping = data.heartbeatApi.heartbeatList[instance.tags[0].monitor_id][0].ping }
-				{@const itemsInArray = instance.name.split(" ").length}
-				{@const pillStyles = "bg-opacity-20 rounded px-[2px] w-fit"}
-				<a href={"https://" + instance.name.split(" ")[itemsInArray === 3 ? 2 : 1].split("(")[1]?.split(")")[0]} class="no-underline {isUp ? "" : "pointer-events-none"}">
-					<div class="bg-secondary w-56 h-20 rounded p-2 flex flex-row justify-center items-center gap-2">
-						<span>{itemsInArray === 3 ? instance.name.split(" ")[0] + " " + instance.name.split(" ")[1] : instance.name.split(" ")[0]}</span>
-						{#if !isUp}
-							<span class="bg-red text-red {pillStyles}">Down</span>
-						{/if}
-						<span class="{uptime !== 0 ? "bg-green text-green" : "bg-red text-red"} {pillStyles}">{uptime + "%"}</span>
-						{#if isUp}
-							<span class="bg-green text-green {pillStyles}">{ping + "MS"}</span>
-						{/if}
-					</div>
-				</a>
-			{/each}
-		</div>
-	{/each}
+	<details class="px-0" open>
+		<summary>Click here to reveal the instances</summary>
+		{#each data.statusData.publicGroupList as category}
+			<h4>{category.name}</h4>
+			<div class="flex flex-row flex-wrap gap-4">
+				{#each category.monitorList as instance}
+					{@const isUp = data.heartbeatApi.heartbeatList[instance.tags[0].monitor_id][0].status === 1 ? true : false}
+					{@const uptimeRaw = data.heartbeatApi.uptimeList[instance.tags[0].monitor_id + "_" + 24] * 100}
+					{@const uptime = uptimeRaw % 1 === 0 ? uptimeRaw : uptimeRaw.toFixed(2)}
+					{@const ping = data.heartbeatApi.heartbeatList[instance.tags[0].monitor_id][0].ping }
+					{@const itemsInArray = instance.name.split(" ").length}
+					{@const pillStyles = "bg-opacity-20 rounded px-[2px] w-fit"}
+					{@const green = "bg-green-bg text-green-text"}
+					{@const red = "bg-red-bg text-red-text"}
+					<a href={"https://" + instance.name.split(" ")[itemsInArray === 3 ? 2 : 1].split("(")[1]?.split(")")[0]} class="no-underline {isUp ? "" : "pointer-events-none"}">
+						<div class="bg-secondary w-56 rounded p-2 flex flex-col gap-2">
+							<span>{itemsInArray === 3 ? instance.name.split(" ")[0] + " " + instance.name.split(" ")[1] : instance.name.split(" ")[0]}</span>
+							<div class="flex flex-row flex-wrap gap-1">
+								{#if !isUp}
+									<div class="{red} {pillStyles}">Down</div>
+								{/if}
+								<div class="{uptime !== 0 ? green : red} {pillStyles}">{uptime + "%"}</div>
+								{#if isUp}
+									<div class="{green} {pillStyles}">{ping + "MS"}</div>
+								{/if}
+								<div class="bg-[{instance.tags[0].color}] text-[{instance.tags[0].color}] {pillStyles}">{instance.tags[0].name}</div>
+							</div>
+						</div>
+					</a>
+				{/each}
+			</div>
+		{/each}
+	</details>
 
 	<p>...or <a href="https://status.akisblack.dev">on the status page</a>.</p>
 
