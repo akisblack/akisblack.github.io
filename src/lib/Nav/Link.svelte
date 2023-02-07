@@ -13,8 +13,8 @@
 	class="flex items-center gap-1"
 	on:click
 	class:text-accent={link.href !== "/"
-			? $page.url.pathname.match(link.href)
-			: link.href === $page.url.pathname}
+		? $page.url.pathname.match(link.href)
+		: link.href === $page.url.pathname}
 >
 	{#if link.icon}
 		<div class={link.icon} />

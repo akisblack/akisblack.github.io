@@ -5,7 +5,7 @@ import { get } from "svelte/store";
 export const load = (() => {
 	const meta = {
 		title: "Services"
-	}
+	};
 
 	return {
 		announcements: get(announcements),

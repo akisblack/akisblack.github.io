@@ -7,7 +7,7 @@
 	import { page, navigating } from "$app/stores";
 	import type { LayoutData } from "./$types";
 	import Nav from "$lib/Nav/Nav.svelte";
-	import PageProgressBar from '$lib/PageProgressBar.svelte';
+	import PageProgressBar from "$lib/PageProgressBar.svelte";
 
 	export let data: LayoutData;
 </script>
@@ -15,10 +15,12 @@
 <svelte:head>
 	<title>{$page.data.title} | akisblack</title>
 	{#if $page.data.description}
-		<meta name="description" content={$page.data.description} />
+		<meta
+			name="description"
+			content={$page.data.description}
+		/>
 	{/if}
 </svelte:head>
-
 
 <Nav>
 	{#if $navigating}

@@ -1,4 +1,5 @@
-html, html.light {
+html,
+html.light {
 	--primary: #ffffff;
 	--secondary: #eeeeee;
 	--tertiary: #141414;

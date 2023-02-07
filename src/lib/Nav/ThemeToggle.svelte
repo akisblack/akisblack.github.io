@@ -24,6 +24,8 @@
 	on:click={toggle}
 	aria-label="Toggle theme"
 >
-	<div class="i-ic:outline-{theme === "dark" ? "light" : "dark"}-mode h-5 w-5" />
+	<div
+		class="i-ic:outline-{theme === 'dark' ? 'light' : 'dark'}-mode h-5 w-5"
+	/>
 	<span class="navPlus1:hidden">Toggle theme</span>
 </button>
