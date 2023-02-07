@@ -2,23 +2,24 @@
 	import {
 		Card,
 		Description
-	} from "./Card";
+	} from "$lib/Card";
 
-	export let projects: any = [];
+	import type { PageData } from "./$types";
+
+	export let data: PageData;
 </script>
 
-{#if !projects.error}
+{#if !data.projects.error}
 	<div class="projects">
 		<h1 class="mt-6">Projects</h1>
-		{#each projects as { link, owner, repo, description, languageColor }}
+		{#each data.projects as { link, owner, repo, description, languageColor }}
 			<a href={link} class="no-underline hover:opacity-100">
 				<Card name="{owner === "akisblack" ? "" : `${owner}/`}{repo}" color={languageColor}>
 					<Description slot="desc">{description}</Description>
 				</Card>
 			</a>
 		{/each}
-		<hr class="border-grey" />
 	</div>
 {:else}
-	<p>{projects.message}</p>
+	<p>{data.projects.message}</p>
 {/if}

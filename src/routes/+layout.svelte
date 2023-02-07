@@ -1,12 +1,13 @@
 <script lang="ts">
-	import Hero from "$lib/Hero.svelte";
 	import Footer from "$lib/Footer.svelte";
 	import "uno.css";
 	import "@unocss/reset/tailwind.css";
 	import "../app.css";
 	import PageTransition from "$lib/PageTransition.svelte";
-	import { page } from "$app/stores";
+	import { page, navigating } from "$app/stores";
 	import type { LayoutData } from "./$types";
+	import Nav from "$lib/Nav/Nav.svelte";
+	import PageProgressBar from '$lib/PageProgressBar.svelte';
 
 	export let data: LayoutData;
 </script>
@@ -18,10 +19,17 @@
 	{/if}
 </svelte:head>
 
+
+<Nav>
+	{#if $navigating}
+		<PageProgressBar />
+	{/if}
+</Nav>
+
 <main class="container">
-	<Hero />
 	<PageTransition pathname={data.pathname}>
 		<slot />
 	</PageTransition>
-	<Footer />
 </main>
+
+<Footer />

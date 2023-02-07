@@ -1,22 +1,16 @@
 import type { PageServerLoad } from "./$types";
-import axios from "axios";
-import { Agent } from "https";
+import { announcements, statusData, heartbeatApi } from "../../stores";
+import { get } from "svelte/store";
 
-const agent = new Agent({
-	family: 4
-});
-
-export const load: PageServerLoad = async ({ fetch }) => {
+export const load = (() => {
 	const meta = {
 		title: "Services"
 	}
 
 	return {
-		announcements: await fetch("/api/announcements").then(
-			(res) => res.json()
-		),
-		statusData: await (await axios("https://status.akisblack.dev/api/status-page/akisblack", { httpsAgent: agent })).data,
-		heartbeatApi: await (await axios("https://status.akisblack.dev/api/status-page/heartbeat/akisblack", { httpsAgent: agent })).data,
+		announcements: get(announcements),
+		statusData: get(statusData),
+		heartbeatApi: get(heartbeatApi),
 		...meta
 	};
-};
+}) satisfies PageServerLoad;

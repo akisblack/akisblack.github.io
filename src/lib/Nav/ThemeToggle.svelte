@@ -11,14 +11,19 @@
 	let toggle = () => {
 		theme = theme === "dark" ? "light" : "dark";
 	};
+
+	let classes: string = "";
+
+	export { classes as class };
 </script>
 
 <DarkMode bind:theme />
 
 <button
-	class="bg-grey text-primary duration-400 flex h-10 w-10 items-center justify-center rounded transition"
+	class="bg-grey text-primary flex h-8 navPlus1:w-8 lt-navPlus1:p-2 gap-2 items-center justify-center rounded {classes}"
 	on:click={toggle}
 	aria-label="Toggle theme"
 >
-	<i class="i-ic:outline-{theme === "dark" ? "light" : "dark"}-mode h-6 w-6" />
+	<div class="i-ic:outline-{theme === "dark" ? "light" : "dark"}-mode h-5 w-5" />
+	<span class="navPlus1:hidden">Toggle theme</span>
 </button>

@@ -43,6 +43,15 @@ export default defineConfig({
 			"redText": "var(--red-text)",
 			transparent: "transparent",
 			current: "currentColor"
+		},
+		breakpoints: {
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
+			"2xl": "1536px",
+			nav: "440px",
+			"navPlus1": "441px"
 		}
 	}
 });

@@ -1,12 +1,14 @@
 import type { PageServerLoad } from "./$types";
+import { projects } from "../../stores";
+import { get } from "svelte/store";
 
 export const load = (async () => {
 	const meta = {
-		title: "Home",
-		description: "Web developer, Linux enthusiast and average Greek."
+		title: "Projects"
 	}
 
 	return {
+		projects: get(projects),
 		...meta
 	};
 }) satisfies PageServerLoad;

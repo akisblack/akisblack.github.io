@@ -1,4 +1,4 @@
-import map from "$lib/map";
+import { announcements, statusData, heartbeatApi, projects } from "./stores";
 import axios from "axios";
 import { Agent } from "https";
 
@@ -8,29 +8,45 @@ const agent = new Agent({
 
 const updateMap = async () => {
 	try {
-		const announcements = await axios("https://status.akisblack.dev/api/status-page/akisblack", { httpsAgent: agent });
+		const res = await axios("https://status.akisblack.dev/api/status-page/akisblack", { httpsAgent: agent, timeout: 10000 });
 
-		if (announcements.status === 200) {
-			map.set("announcements", announcements.data);
+		if (res.status === 200) {
+			announcements.set(res.data);
+			statusData.set(res.data);
 		} else {
-			map.set("announcements", { error: true, message: "Error: " + announcements.status });
+			announcements.set({ error: true, message: "Error: " + res.status });
+			statusData.set({ error: true, message: "Error: " + res.status });
 		}
 
 	} catch (err) {
-		map.set("announcements", { error: true, message: "Error: " + err });
+		announcements.set({ error: true, message: "Error: " + err });
+		statusData.set({ error: true, message: "Error: " + err });
 	}
 
 	try {
-		const projects = await axios("https://gh-pinned-repos.egoist.dev/?username=akisblack", { httpsAgent: agent });
+		const res = await axios("https://status.akisblack.dev/api/status-page/heartbeat/akisblack", { httpsAgent: agent, timeout: 10000 });
 
-		if (projects.status === 200) {
-			map.set("projects", projects.data);
+		if (res.status === 200) {
+			heartbeatApi.set(res.data);
 		} else {
-			map.set("projects", { error: true, message: "Error: " + projects.status });
+			heartbeatApi.set({ error: true, message: "Error: " + res.status });
+		}
+
+	} catch (err) {
+		heartbeatApi.set({ error: true, message: "Error: " + err });
+	}
+
+	try {
+		const res = await axios("https://gh-pinned-repos.egoist.dev/?username=akisblack", { httpsAgent: agent, timeout: 10000 });
+
+		if (res.status === 200) {
+			projects.set(res.data);
+		} else {
+			projects.set({ error: true, message: "Error: " + res.status });
 		}
 		
 	} catch (err) {
-		map.set("projects", { error: true, message: "Error: " + err });
+		projects.set({ error: true, message: "Error: " + err });
 	}
 };
 
