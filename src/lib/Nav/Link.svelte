@@ -15,6 +15,7 @@
 	class:text-accent={link.href !== "/"
 		? $page.url.pathname.match(link.href)
 		: link.href === $page.url.pathname}
+	aria-label={link.text}
 >
 	{#if link.icon}
 		<div class={link.icon} />

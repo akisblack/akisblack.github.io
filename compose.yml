@@ -9,3 +9,5 @@ services:
         #    dockerfile: Dockerfile
         ports:
             - "127.0.0.1:1339:3000"
+        environment:
+            - DISCORD_WEBHOOK_URL= # your discord webhook url

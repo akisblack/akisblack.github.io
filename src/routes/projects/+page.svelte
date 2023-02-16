@@ -8,7 +8,7 @@
 
 {#if !data.projects.error}
 	<div class="projects">
-		<h1 class="mt-6">Projects</h1>
+		<h1>Projects</h1>
 		{#each data.projects as { link, owner, repo, description, languageColor }}
 			<a
 				href={link}

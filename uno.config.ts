@@ -33,7 +33,7 @@ export default defineConfig({
 
 	theme: {
 		fontFamily: {
-			primary: ["Outfit"]
+			primary: ["var(--font-primary)"]
 		},
 		margin: {
 			"0-auto": "0 auto"

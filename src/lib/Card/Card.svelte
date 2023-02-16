@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="bg-secondary hover:(-translate-x-1 -translate-y-1 shadow-xl) my-6 rounded border-l-4 p-4 transition-all"
+	class="bg-secondary hover:(-translate-x-1 -translate-y-1 shadow-xl) my-6 rounded border-l-4 p-4 transition-all not-prose"
 	style="border-color: {color};"
 >
 	<div

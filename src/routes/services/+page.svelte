@@ -28,7 +28,7 @@
 	}
 </script>
 
-<div class="services prose max-w-none">
+<div class="services">
 	<h1>Services</h1>
 
 	<p>
@@ -41,7 +41,7 @@
 			<div
 				class="flex flex-col break-words rounded p-8 {backgroundColor ===
 				'#212529'
-					? 'text-text'
+					? 'text-grey'
 					: 'text-black'}"
 				style="background-color: {backgroundColor};"
 			>
@@ -78,10 +78,10 @@
 	<h3>But where are the instances!!!????</h3>
 
 	<details
-		class="px-0 not-prose"
+		class="px-0"
 		open
 	>
-		<summary class="m-2 ml-0">Click here to reveal the instances</summary>
+		<summary class="ml-0">Click here to reveal the instances</summary>
 		{#if !data.statusData.error && !data.heartbeatApi.error}
 			{#each data.statusData.publicGroupList as category}
 				<h4>{category.name}</h4>
@@ -102,26 +102,17 @@
 						data.heartbeatApi.heartbeatList[
 							instance.tags[0].monitor_id
 						][0].ping}
-					{@const itemsInArray = instance.name.split(" ").length}
 					{@const pillStyles = "bg-opacity-20 rounded px-[2px] w-fit"}
 					{@const green = "bg-green-bg text-green-text"}
 					{@const red = "bg-red-bg text-red-text"}
 					<a
-						href={"https://" +
-							instance.name
-								.split(" ")
-								[itemsInArray === 3 ? 2 : 1].split("(")[1]
-								?.split(")")[0]}
+						href={instance.url}
 						class="{isUp
 							? ''
 							: 'pointer-events-none'} no-underline hover:brightness-100"
 					>
 						<Card
-							name={itemsInArray === 3
-								? instance.name.split(" ")[0] +
-								  " " +
-								  instance.name.split(" ")[1]
-								: instance.name.split(" ")[0]}
+							name={instance.name}
 							color={instance.tags[0].color}
 						>
 							<div

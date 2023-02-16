@@ -28,7 +28,7 @@
 	{/if}
 </Nav>
 
-<main class="container">
+<main class="container prose">
 	<PageTransition pathname={data.pathname}>
 		<slot />
 	</PageTransition>

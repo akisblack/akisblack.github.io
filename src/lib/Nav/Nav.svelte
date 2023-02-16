@@ -8,6 +8,7 @@
 	const links = [
 		{ href: "/services", text: "Services" },
 		{ href: "/projects", text: "Projects" },
+		{ href: "/contact", text: "Contact" },
 		{
 			href: "https://matrix.to/#/@akis:projectsegfau.lt",
 			text: "Matrix",
@@ -45,7 +46,7 @@
 	<slot />
 	<div class="flex items-center justify-between w-full">
 		<Logo />
-		<button on:click={() => (showMenu = !showMenu)}>
+		<button on:click={() => (showMenu = !showMenu)} aria-label="Toggle menu">
 			<div
 				class="{showMenu
 					? 'i-ic:outline-close'

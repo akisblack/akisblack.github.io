@@ -4,11 +4,12 @@ html.light {
 	--secondary: #eeeeee;
 	--tertiary: #141414;
 	--grey: #444444;
-	--accent: #009b50;
+	--accent: #6e44ff;
 	--green-bg: #4ade8033;
 	--green-text: #15803d;
 	--red-bg: #f8717133;
 	--red-text: #b91c1c;
+	--font-primary: "Outfit", sans-serif;
 	color-scheme: light;
 }
 
