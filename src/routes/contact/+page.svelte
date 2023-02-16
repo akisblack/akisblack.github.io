@@ -37,7 +37,7 @@ export let data: PageServerData;
 
 <style>
 	form > div {
-		@apply flex flex-col items-start gap-2;
+		@apply flex flex-col items-start gap-2 w-fit;
 	}
 
 	form > div > label {
@@ -45,6 +45,6 @@ export let data: PageServerData;
 	}
 
 	form > div > input, form > div > textarea, form > button {
-		@apply w-110 px-2 py-1 bg-secondary rounded flex items-center gap-2 text-lg;
+		@apply w-110 lt-sm\:w-70 px-2 py-1 bg-secondary rounded flex items-center gap-2 text-lg;
 	}
 </style>
