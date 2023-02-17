@@ -15,7 +15,7 @@ export const load = (() => {
 }) satisfies PageServerLoad;
 
 export const actions: Actions = {
-    default: async ({ request, getClientAddress, fetch }) => {
+	default: async ({ request, getClientAddress, fetch }) => {
 		const formData = await request.formData();
 
 		const formDataEntries = Object.fromEntries(formData.entries());
@@ -23,13 +23,17 @@ export const actions: Actions = {
 		const Body = Joi.object({
 			name: Joi.string().required(),
 			email: Joi.string().email().required(),
-			message: Joi.string().required().custom((value, helpers) => {
-				if (value.split(" ").length > 500) {
-					return helpers.message({ custom: "Message is too long, please keep it under 500 words." });
-				}
+			message: Joi.string()
+				.required()
+				.custom((value, helpers) => {
+					if (value.split(" ").length > 500) {
+						return helpers.message({
+							custom: "Message is too long, please keep it under 500 words."
+						});
+					}
 
-				return value;
-			})
+					return value;
+				})
 		});
 
 		if (Body.validate(formDataEntries).error) {
@@ -44,11 +48,21 @@ export const actions: Actions = {
 					"Content-Type": "application/json"
 				},
 				body: JSON.stringify({
-					content: `**__New contact form submission__**\n\n**Name:** ${formData.get("name")}\n**Email:** ${formData.get("email")}\n**IP:** ${getClientAddress()}\n**Message:** ${formData.get("message")}`
+					content: `**__New contact form submission__**\n\n**Name:** ${formData.get(
+						"name"
+					)}\n**Email:** ${formData.get(
+						"email"
+					)}\n**IP:** ${getClientAddress()}\n**Message:** ${formData.get(
+						"message"
+					)}`
 				})
 			});
 
-			return { success: true, message: "Thanks for your message, I will reply as soon as possible." };
+			return {
+				success: true,
+				message:
+					"Thanks for your message, I will reply as soon as possible."
+			};
 		}
-    }
+	}
 };

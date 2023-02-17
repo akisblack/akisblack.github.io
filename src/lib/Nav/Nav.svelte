@@ -37,16 +37,44 @@
 
 	const linkContainerStyles =
 		"flex items-center gap-4 bg-secondary children:(no-underline text-grey)";
+
+	let nav: HTMLElement;
+
+	let lastScrollTop: number;
+
+	let scrollTop: number;
+
+	const handleScroll = () => {
+		if (!showMenu) {
+			if (scrollTop > lastScrollTop) {
+				nav.style.top = "-80px";
+			} else {
+				nav.style.top = "0";
+			}
+		}
+
+		lastScrollTop = scrollTop;
+	};
 </script>
 
-<svelte:window bind:innerWidth={width} />
+<svelte:window
+	bind:innerWidth={width}
+	bind:scrollY={scrollTop}
+	on:scroll={handleScroll}
+/>
 
-<nav class="{navStyles} sticky w-full top-0 z-50 js">
+<nav
+	class="{navStyles} sticky w-full top-0 z-50 js transition-top duration-200"
+	bind:this={nav}
+>
 	<!-- Slot for the progress bar -->
 	<slot />
 	<div class="flex items-center justify-between w-full">
 		<Logo />
-		<button on:click={() => (showMenu = !showMenu)} aria-label="Toggle menu">
+		<button
+			on:click={() => (showMenu = !showMenu)}
+			aria-label="Toggle menu"
+		>
 			<div
 				class="{showMenu
 					? 'i-ic:outline-close'
