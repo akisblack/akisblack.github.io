@@ -1,6 +1,6 @@
-FROM node:18-alpine
+FROM node:20-alpine AS build
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
@@ -13,6 +13,7 @@ COPY . .
 
 RUN pnpm build
 
-EXPOSE 3000
-
-CMD ["node", "build/index.js"]
+FROM caddy:2-alpine
+COPY --from=build /app/dist/Caddyfile /etc/caddy
+COPY --from=build /app/dist /usr/share/caddy
+EXPOSE 1339

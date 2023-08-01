@@ -1,6 +1,5 @@
 services:
     website:
-        container_name: website
         image: ghcr.io/akisblack/website:latest
         restart: unless-stopped
         # uncomment these lines if you want to build from source
@@ -8,6 +7,4 @@ services:
         #    context: .
         #    dockerfile: Dockerfile
         ports:
-            - "127.0.0.1:1339:3000"
-        environment:
-            - DISCORD_WEBHOOK_URL= # your discord webhook url
+            - "127.0.0.1:1339:1339"

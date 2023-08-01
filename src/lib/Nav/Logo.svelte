@@ -1,4 +1,0 @@
-<a
-	href="/"
-	class="text-grey no-underline text-2xl font-bold">akisblack</a
->
