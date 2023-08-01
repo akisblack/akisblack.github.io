@@ -1,3 +1,4 @@
 :1339 {
+	root * /usr/share/caddy
 	file_server
 }
